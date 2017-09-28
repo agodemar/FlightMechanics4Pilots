@@ -1,11 +1,22 @@
-## Welcome to GitHub Pages
+# Flight mechanics for pilots of Italian Air Force Academy
 
-You can use the [editor on GitHub](https://github.com/agodemar/FlightMechanics4Pilots/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This course examines the fundamental physical laws governing the forces acting on an aircraft in flight, and what effect these natural laws and forces have on the performance characteristics of aircraft. To control an aircraft, be it an airplane, helicopter, glider, or balloon, the pilot must understand the principles involved and learn to use or counteract these natural forces.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Structure of the Atmosphere
 
-### Markdown
+The atmosphere is an envelope of air that surrounds the Earth and rests upon its surface. It is as much a part of the Earth as the seas or the land, but air differs from land and water as it is a mixture of gases. It has mass, weight, and indefinite shape.
 
+To be continued...
+
+### Air is a Fluid
+
+To be continued...
+
+
+
+
+
+# The rest
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
