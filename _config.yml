@@ -3,10 +3,10 @@ theme: hmfaysal-omega-theme
 
 title:            Mechanics of Flight for Pilots
 description:      A course of Flight Mechanics for pilots of the Italian Air Force Academy, Accademia Aeronautica, Pozzuoli, Italy.
-logo:             images/omikron.png
+logo:             omikron.png
 disqus_shortname: FlightMechanics4Pilots
 # Assign a default image for your site's header and footer
-default_bg:       images/default_bg.jpg
+default_bg:       default_bg.jpg
 search:           true
 share:            true
 # Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
