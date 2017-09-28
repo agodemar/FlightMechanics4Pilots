@@ -1,12 +1,12 @@
 #theme: jekyll-theme-architect
 theme: hmfaysal-omega-theme
 
-title:            Site Title
-description:      Site description for the metas.
-logo:             omikron.png
-disqus_shortname: shortname
+title:            Mechanics of Flight for Pilots
+description:      A course of Flight Mechanics for pilots of the Italian Air Force Academy, Accademia Aeronautica, Pozzuoli, Italy.
+logo:             images/omikron.png
+disqus_shortname: FlightMechanics4Pilots
 # Assign a default image for your site's header and footer
-default_bg:       default_bg.jpg
+default_bg:       images/default_bg.jpg
 search:           true
 share:            true
 # Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
@@ -17,7 +17,7 @@ animated_fins:    true
 # Specify the fin color in RGB value
 fin_color:        "255,255,255"
 # Change url to your domain. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
+url:              https://agodemar.github.io/FlightMechanics4Pilots/
 # baseurl:           
 
 # Gems used
@@ -46,7 +46,7 @@ jekyll-archives:
 
 # Owner/author information
 author:
-  name:           Your Name
+  name:           Agostino De Marco
   picture:        your-photo.jpg
   email:          your@email.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
@@ -89,7 +89,7 @@ sitemap:
         - "/index.html"
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Italy/Rome
 future:      true
 markdown:    kramdown
 highlighter: rouge
@@ -110,3 +110,5 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
+
+mathjax: true
