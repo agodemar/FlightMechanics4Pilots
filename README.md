@@ -2,6 +2,11 @@
 
 This course examines the fundamental physical laws governing the forces acting on an aircraft in flight, and what effect these natural laws and forces have on the performance characteristics of aircraft. To control an aircraft, be it an airplane, helicopter, glider, or balloon, the pilot must understand the principles involved and learn to use or counteract these natural forces.
 
+This is the lift conventional expression:
+$$
+L = \frac{1}{2} \rho V^2 S \, C_L
+$$
+
 ## Structure of the Atmosphere
 
 The atmosphere is an envelope of air that surrounds the Earth and rests upon its surface. It is as much a part of the Earth as the seas or the land, but air differs from land and water as it is a mixture of gases. It has mass, weight, and indefinite shape.
