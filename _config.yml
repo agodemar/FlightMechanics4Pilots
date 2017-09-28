@@ -6,7 +6,7 @@ description:      A course of Flight Mechanics for pilots of the Italian Air For
 logo:             omikron.png
 disqus_shortname: FlightMechanics4Pilots
 # Assign a default image for your site's header and footer
-default_bg:       default_bg.jpg
+default_bg:       default_bg.png
 search:           true
 share:            true
 # Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
