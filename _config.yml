@@ -91,7 +91,8 @@ sitemap:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Italy/Rome
 future:      true
-markdown:    kramdown
+# markdown:    kramdown
+markdown:    redcarpet
 highlighter: rouge
 paginate:    6
 paginate_path: "/blog/:num/"
