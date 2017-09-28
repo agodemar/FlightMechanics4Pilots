@@ -4,9 +4,9 @@ This course examines the fundamental physical laws governing the forces acting o
 
 This is the lift conventional expression:
 
-\\[
+\[
 L = \frac{1}{2} \rho V^2 S \, C_L
-\\]
+\]
 
 
 ## Structure of the Atmosphere
