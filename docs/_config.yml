@@ -8,3 +8,4 @@ repository: agodemar/FlightMechanics4Pilots
 github: [metadata]
 
 markdown: kramdown
+mathjax: true
