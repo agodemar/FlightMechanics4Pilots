@@ -9,3 +9,8 @@ github: [metadata]
 
 markdown: kramdown
 mathjax: true
+
+highlighter: pygments
+
+include: 
+   ['pages']
