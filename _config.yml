@@ -1,114 +1,76 @@
-#theme: jekyll-theme-architect
-theme: hmfaysal-omega-theme
-
+name: agodemar
 title:            Mechanics of Flight for Pilots
 description:      A course of Flight Mechanics for pilots of the Italian Air Force Academy, Accademia Aeronautica, Pozzuoli, Italy.
 logo:             Stemma_tondo_Accademia.jpg
+disqus:           agodemarFlightMechanics4Pilots
 disqus_shortname: FlightMechanics4Pilots
-# Assign a default image for your site's header and footer
-default_bg:       default_bg.png
-search:           true
-share:            true
-# Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
-readtime:         true
-# Turn on or off the fin animations in the header and footer
-triangleheader:	  true
-animated_fins:    true
-# Specify the fin color in RGB value
-fin_color:        "255,255,255"
-# Change url to your domain. Leave localhost server or blank when working locally.
-url:              https://agodemar.github.io/FlightMechanics4Pilots/
-# baseurl:           
 
-# Gems used
-#plugins:
-gems:
-  - jekyll-feed
-  - jekyll-archives
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-seo-tag
-
-# Archives configuration
-# https://github.com/jekyll/jekyll-archives/blob/master/docs/configuration.md
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout: 'archive'
-  permalinks:
-    # year: '/:year/'
-    # month: '/:year/:month/'
-    # day: '/:year/:month/:day/'
-    tag: '/archive/tag/:name/'
-    category: '/archive/category/:name/'
-
-# Owner/author information
-author:
-  name:           Agostino De Marco
-  picture:        your-photo.jpg
-  email:          your@email.com
-  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Some Details about yourself
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email: agostino.demarco@unina.it
   facebook:
-  github:
-  linkedin:
+  flickr:
+  github: agodemar
   instagram:
-  tumblr:
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    "http://plus.google.com/123123123123132123"
+  linkedin:
+  pinterest:
+  rss: feed # just type anything here for a working RSS icon
+  twitter: telfarac
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: # channel/<your_long_string> or user/<user-name>
+  googleplus: # anything in your profile username that comes after plus.google.com/
 
-# Analytics and webmaster tools stuff goes here
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
-google_verify:
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: Home
-    url: /
-    external: false
-    icon: home
-  - title: Categories
-    url: /categories
-  - title: Tags
-    url: /tags
+# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Used for Sitemap.xml and your RSS feed
+url: 
 
-# Sitemap configuration
-# https://github.com/kinnetica/jekyll-plugins
-sitemap:
-    file: "/sitemap.xml"
-    exclude:
-        - "/atom.xml"
-        - "/feed.xml"
-        - "/feed/index.xml"
-    include_posts:
-        - "/index.html"
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+baseurl: https://agodemar.github.io/FlightMechanics4Pilots
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Italy/Rome
-future:      true
-markdown:    kramdown
-highlighter: rouge
-paginate:    6
-paginate_path: "/blog/:num/"
+#
+# !! You don't need to change any of the configuration flags below !!
+#
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-collections:
-  posts:
-    output: true
-    permalink: /blog/:title
-  pages:
-    output: true
-    permalink: /:title
+permalink: /:title/
 
+# The release of Jekyll Now that you're using
+version: v1.2.0
+
+markdown: kramdown
 kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
 
-mathjax: true
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :expanded # You might prefer to minify using :compressed
+
+# Use the following plug-ins
+#gems:
+#  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+#  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      category: "main"
