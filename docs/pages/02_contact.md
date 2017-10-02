@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact
+permalink: /docs/02_contact.html
 ---
 
 Contact content goes here.
