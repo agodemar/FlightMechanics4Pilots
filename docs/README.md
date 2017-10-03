@@ -2,17 +2,4 @@
 
 Hey.
 
-
 Just a place for me to write about the Mechanics of Flight.
-
-I welcome any improvements/criticism. Feel free to submit a pull request or raise an issue.
-
-Yes!
-
-$$a^2 + b^2 = c^2$$
-
-Now test cross-references:
-
-$$ E = m\cdot c^2 \label{eq:mc2}$$
-
-Do you recognize Eq. (\ref{eq:mc2})?

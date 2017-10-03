@@ -10,7 +10,6 @@ github: [metadata]
 markdown: kramdown
 mathjax: true
 
-highlighter: pygments
+include: ['_mypages']
 
-include: 
-   ['pages']
+categories: [mycontent, misc, menu]
