@@ -1,15 +1,26 @@
 theme: jekyll-theme-cayman
+markdown: kramdown
+mathjax: true
 
 title: Flight Mechanics for Pilots
 description: Teaching material for student pilots of the Italian Air Force Academy
 
-url: https://github.com/agodemar/FlightMechanics4Pilots
+# url: https://github.com/agodemar/FlightMechanics4Pilots
 repository: agodemar/FlightMechanics4Pilots
-github: [metadata]
+# repository: https://github.com/agodemar/FlightMechanics4Pilots
+# github: [metadata]
 
-markdown: kramdown
-mathjax: true
+# include: ['_mypages']
+defaults:
+  - scope:
+      path: "_mypages"
+      type: "mypages"
+    values:
+      layout: "mypages"
 
-include: ['_mypages']
+collections:
+  mypages:
+    permalink: /:collection/:path/
+    output: true
 
 categories: [mycontent, misc, menu]

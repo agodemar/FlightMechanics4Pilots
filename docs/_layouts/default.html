@@ -10,11 +10,14 @@
     <section class="main-content">
       <p>
         <a href="{{ site.url }}">Home</a>
-          {% for page in site.pages %}
+        {% for collection in site.collections %}
+          {% assign name = collection.label %}
+          {% for page in site[name] %}
             {% if page.categories contains 'menu' %}
-            . <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+              . <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
             {% endif %}
           {% endfor %}
+        {% endfor %}
       </p>
 
       {{ content }}

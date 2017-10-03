@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 categories: [misc, menu]
-permalink: contact.html
+permalink: /mypages/contact/
 ---
 
 Contact content goes here.
