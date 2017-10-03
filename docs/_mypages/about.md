@@ -2,7 +2,7 @@
 layout: page
 title: About
 categories: [misc, menu]
-permalink: /mypages/about/
+permalink: /FlightMechanics4Pilots/mypages/about/
 ---
 
 This website is hosted by [Github](https::/github.com) and uses the webservices offered by

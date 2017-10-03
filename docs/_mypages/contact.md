@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 categories: [misc, menu]
-permalink: /mypages/contact/
+permalink: /FlightMechanics4Pilots/mypages/contact/
 ---
 
 Contact content goes here.
