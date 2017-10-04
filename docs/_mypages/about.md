@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: About
 categories: [misc, menu]
 permalink: /mypages/about/

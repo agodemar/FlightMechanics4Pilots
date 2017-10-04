@@ -1,10 +1,26 @@
 ---
-layout: page
+layout: default
 title: Contact
 categories: [misc, menu]
 permalink: /mypages/contact/
 ---
 
-Contact content goes here.
+**Agostino De Marco**, PhD
 
-My e-mail is [email@something.com](mailto:email@something.com).
+Assistant Professor of Flight Mechanics
+
+**Università degli Studi di Napoli Federico II, Department Industrial Engineering**
+
+**_DAF_ — Design of Aircraft and Flight technologies research group**
+
+via Claudio 21, 80125 Napoli - Italy
+
+Tel.: +39 0817683323
+
+Email: agostino **dot** demarco **at** unina **dot** it
+
+Web 0: [www.docenti.unina.it/agostino.de_marco](http://www.docenti.unina.it/agostino.de_marco)
+
+Web 1: [www.dii.unina.it](http://www.dii.unina.it)
+
+Web 2: [www.daf.unina.it](http://www.daf.unina.it)
