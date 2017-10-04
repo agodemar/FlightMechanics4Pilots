@@ -13,9 +13,13 @@ Assistant Professor of Flight Mechanics
 
 **_DAF_ — Design of Aircraft and Flight technologies research group**
 
+---
+
 via Claudio 21, 80125 Napoli - Italy
 
 Tel.: +39 0817683323
+
+---
 
 Email: agostino **dot** demarco **at** unina **dot** it
 
@@ -24,3 +28,7 @@ Web 0: [www.docenti.unina.it/agostino.de_marco](http://www.docenti.unina.it/agos
 Web 1: [www.dii.unina.it](http://www.dii.unina.it)
 
 Web 2: [www.daf.unina.it](http://www.daf.unina.it)
+
+---
+
+![Accademia Aeronautica di Pozzuoli (NA)]({{ "/assets/img/Stemma_tondo_Accademia.jpg" | absolute_url }}){:height="20%" width="20%"}

@@ -1,0 +1,2 @@
+
+https://olivierpieters.be/blog/2016/08/23/using-css3-counters-for-figure-and-table-numbering

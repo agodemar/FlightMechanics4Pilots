@@ -17,6 +17,10 @@ defaults:
       type: "mypages"
     values:
       layout: "mypages"
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
 
 collections:
   mypages:
