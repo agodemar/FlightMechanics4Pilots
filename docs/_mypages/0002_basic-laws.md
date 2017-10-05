@@ -25,7 +25,7 @@ revolutionary work dated 1687, titled *Philosophiæ Naturalis Principia Mathemat
    — i.e., the *acceleration* $\mathbf{a} = \mathrm{d} \mathbf{V}/\mathrm{d}t$ —
    of a particle is directly proportional to the force acting upon it.
    The constant of proportionality is the *mass* of the object
-   — $\mathbf{F} = m \mathbf{a}$.
+   — i.e. $\mathbf{F} = m \mathbf{a}$.
 
    By defining the product of the mass of the particle with its velocity as its
    *linear momentum* $\mathbf{Q} = m \mathbf{V}$, it is implied that the time rate
@@ -164,30 +164,44 @@ must always act in order to maintain such a motion.
 By the second law of motion, the magnitude of the  force increases in proportion
 with the acceleration, that is, the time rate of change of velocity. In a circular motion,
 the acceleration is proportional to the square of the angular speed (revolutions per
-second). If $R$ is the circle radius, the angular speed is
+second). If $R$ is the circle radius, and $V$ is the constant speed along the circular
+path, the angular speed is
 \\[
   \omega = \frac{V}{R}
   \label{eq:Circular:Motion:Omega}
 \\]
-and
+and the centripetal acceleration is
 \\[
-  a = \omega^2 R = \frac{V^2}{R}
+  a = \omega^2 R = \frac{V^2}{R} = V \omega
   \label{eq:Circular:Motion:Acceleration}
 \\]
 
-Now, let us also consider how the centripetal force is applied to the particle.
-Suppose there is another object (or person) applying the centripetal force on the
-moving particle. When children play with a rock tied to a string, they make it move
-in a circle.
-At every instant, the person holding the string applies a pulling force on
-the moving rock. However, by the third law of motion, the rock applies an equal
-and opposite force (i.e., the centrifugal force) on the person, and we feel the tug on
-the string which keeps it straight and taut. Now suppose in order to make the rock
-move faster, the person applies such a large force that the string breaks at a point in
-the circular motion. The rock will immediately depart from a circular motion at this
-point. If there is no other force acting on the rock (such as the force of gravity, or
-an atmospheric force), then it will then continue to move in the straight line which
-is tangential to the original circle. This is the well-known slingshot effect by which
-objects can be hurled as projectiles by first rotating them in a circle. Of course, once
-the projectile is launched, it moves under the influence of gravity and atmospheric
-forces in a curve, rather than a straight line.
+By the first law of motion, it is clear that the only time a particle experiences
+a force-free condition is when it is moving in a straight line at a constant speed
+(uniform rectilinear motion). In contrast, at every instant that a particle moves in a
+curve, its speed may (or may not) be constant, but the direction is instantaneously
+changing due to a normally applied centripetal force. However, it resists the curved
+motion by applying a normal force in the opposite direction. This is known as the
+*centrifugal* inertial force.
+
+Here we are touching on an important but usually difficult to grasp principle.
+The way an object can be forced to move depends only upon the forces that can be
+applied to the object.
+A typical example in flight mechanics is that of an airplane in a turn, idealized
+as a point mass lumped in the vehicle's center of gravity, following a circular and horizontal
+flight path.
+The speed of the object, as well as
+the rate of turn it is required to make determines the required acceleration, which
+must obey the second law of motion in terms of the available normal force. For a
+given flight speed, the smaller the radius of the required turn, the larger centripetal
+acceleration (hence normal force) is required. For a given radius of turn in a curve,
+a larger speed requires a proportionally larger centripetal acceleration, and thus a
+larger normal force. In flight, the normal force is usually supplied by the lift of
+the wings. If an aircraft is moved in a much tighter curve, or at a much higher
+speed than for which it is designed, then the lift produced by the wings can exceed
+their structural strength, causing them to disintegrate. On the other hand, a human
+pilot can “black-out” in a tight maneuver, where the normal acceleration is so high
+that the blood is prevented from circulating to the brain due to the limitation of
+the heart's pumping capacity. Therefore, the acceleration limits of an airplane are
+usually placarded on the instrument panel in the cockpit, so that they are never
+exceeded for safety reasons.
