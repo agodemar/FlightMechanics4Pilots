@@ -9,12 +9,32 @@
 
     <section class="main-content">
       <p>
-        <a href="{{ site.url }}">Home</a>
+        &rarr; <a href="{{ site.url }}">Home</a> .
         {% for collection in site.collections %}
           {% assign name = collection.label %}
           {% for page in site[name] %}
-            {% if page.categories contains 'menu' %}
-              . <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+            {% if page.categories contains 'menu' and page.categories contains 'content'%}
+              <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a> .
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        <br>
+        &rarr;
+        {% for collection in site.collections %}
+          {% assign name = collection.label %}
+          {% for page in site[name] %}
+            {% if page.categories contains 'menu' and page.categories contains 'info'%}
+              <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a> .
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        <br>
+        &rarr;
+        {% for collection in site.collections %}
+          {% assign name = collection.label %}
+          {% for page in site[name] %}
+            {% if page.categories contains 'menu' and page.categories contains 'test'%}
+              <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a> .
             {% endif %}
           {% endfor %}
         {% endfor %}

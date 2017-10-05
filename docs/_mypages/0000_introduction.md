@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Introduction
-categories: [misc, menu]
+categories: [menu, content, introduction]
 permalink: /mypages/introduction/
 ---
 

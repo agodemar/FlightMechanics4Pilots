@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-categories: [misc, menu]
+categories: [menu, info]
 permalink: /mypages/about/
 ---
 

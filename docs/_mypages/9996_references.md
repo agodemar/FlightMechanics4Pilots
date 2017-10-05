@@ -1,7 +1,7 @@
 ---
 layout: default
 title: References
-categories: [misc, menu, references]
+categories: [menu, references]
 permalink: /mypages/references/
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: MathJax Test
-categories: [misc, menu]
+categories: [menu, test]
 permalink: /mypages/test-mathjax/
 ---
 

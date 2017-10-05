@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contact
-categories: [misc, menu]
+categories: [menu, info]
 permalink: /mypages/contact/
 ---
 
