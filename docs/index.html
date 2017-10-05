@@ -12,3 +12,16 @@ aircraft in simple terms and purely on physical principles.
 The focus is on explaining the important physical principles through simple examples
 and illustrations.
 </p>
+
+<p>
+There are several textbooks available on the broad subject of Flight Mechanics.
+Some of them are listed in
+{% for collection in site.collections %}
+  {% assign name = collection.label %}
+  {% for page in site[name] %}
+    {% if page.categories contains 'references' %}
+      <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+  {% endfor %}
+{% endfor %}.
+</p>

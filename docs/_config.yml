@@ -27,4 +27,4 @@ collections:
     permalink: /:collection/:path/
     output: true
 
-categories: [mycontent, misc, menu]
+categories: [mycontent, misc, menu, references]
