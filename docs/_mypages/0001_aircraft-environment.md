@@ -43,9 +43,33 @@ continuous, downward flow of air around the aircraft.
   %}
 
 {% include image.html
+  url="/assets/img/ac_body_axes.png"
+  width="80%"
+  description="Aircraft body-fixed reference frame, with origin at CoG."
+  %}
+
+{% include image.html
+  url="/assets/img/ac_aerobatic_roll.png"
+  width="100%"
+  description="Aircraft CoG trajectory in a roll maneuver."
+  %}
+
+{% include image.html
+  url="/assets/img/ac_aerobatic_roll_2.png"
+  width="100%"
+  description="Two airplanes, two roll maneuvers in opposite directions."
+  %}
+
+{% include image.html
   url="/assets/img/ac_aerobatic_pull.png"
   width="100%"
   description="Aircraft CoG trajectory in a pull-up maneuver."
+  %}
+
+{% include image.html
+  url="/assets/img/ac_aerobatic_pull_2.png"
+  width="100%"
+  description="Two airplanes, two converging pull-up maneuvers."
   %}
 
 The atmospheric temperature...

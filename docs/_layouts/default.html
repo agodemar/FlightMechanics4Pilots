@@ -23,6 +23,18 @@
         {% for collection in site.collections %}
           {% assign name = collection.label %}
           {% for page in site[name] %}
+            {% if page.categories contains 'menu'%}
+              {% if page.categories contains 'references' or page.categories contains 'nomenclature'%}
+                <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a> .
+                {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        <br>
+        &rarr;
+        {% for collection in site.collections %}
+          {% assign name = collection.label %}
+          {% for page in site[name] %}
             {% if page.categories contains 'menu' and page.categories contains 'info'%}
               <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a> .
             {% endif %}
