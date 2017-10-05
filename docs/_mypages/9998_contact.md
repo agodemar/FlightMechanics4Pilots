@@ -31,4 +31,4 @@ Web 2: [www.daf.unina.it](http://www.daf.unina.it)
 
 ---
 
-![Accademia Aeronautica di Pozzuoli (NA)]({{ "/assets/img/Stemma_tondo_Accademia.jpg" | absolute_url }}){:height="20%" width="20%"}
+![Accademia Aeronautica di Pozzuoli (NA)]({{ site.url }}{{ "/assets/img/Stemma_tondo_Accademia.jpg" }}){:height="20%" width="20%"}
