@@ -2,6 +2,9 @@ theme: jekyll-theme-cayman
 markdown: kramdown
 mathjax: true
 
+gems:
+  - jekyll-jupyter-notebook
+
 title: Flight Mechanics for Pilots
 description: Teaching material for student pilots of the Italian Air Force Academy
 
@@ -21,10 +24,14 @@ defaults:
       path: "assets/img"
     values:
       image: true
+  - scope:
+      path: "_mypages/img_jupyter"
+    values:
+      image: true
 
 collections:
   mypages:
     permalink: /:collection/:path/
     output: true
 
-categories: [menu, info, content, references, nomenclature]
+categories: [menu, info, content, notebook, references, nomenclature]

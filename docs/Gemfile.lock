@@ -98,6 +98,8 @@ GEM
     jekyll-github-metadata (2.9.3)
       jekyll (~> 3.1)
       octokit (~> 4.0, != 4.4.0)
+    jekyll-jupyter-notebook (0.0.2)
+      jekyll
     jekyll-mentions (1.2.0)
       activesupport (~> 4.0)
       html-pipeline (~> 2.3)
@@ -213,6 +215,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-jupyter-notebook
   jekyll-theme-cayman
 
 BUNDLED WITH
