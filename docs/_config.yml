@@ -2,9 +2,6 @@ theme: jekyll-theme-cayman
 markdown: kramdown
 mathjax: true
 
-gems:
-  - jekyll-jupyter-notebook
-
 title: Flight Mechanics for Pilots
 description: Teaching material for student pilots of the Italian Air Force Academy
 

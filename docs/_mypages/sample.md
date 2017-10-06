@@ -18,7 +18,7 @@ sys.version_info
 
 
 
-    sys.version_info(major=3, minor=5, micro=4, releaselevel='final', serial=0)
+    sys.version_info(major=3, minor=6, micro=1, releaselevel='final', serial=0)
 
 
 
@@ -97,4 +97,90 @@ Latex(
 
 \begin{array}{rl}\text{root chord,}\, c_{\mathrm{r}}: & 4.0\,\text{m}\newline\text{tip chord,}\, c_{\mathrm{t}}: & 1.5\,\text{m}\newline\text{span,}\, b: & 27\,\text{m}\newline\text{leading edge sweep,}\, \Lambda_{\mathrm{le}}: &25.0\,\text{deg}\end{array}
 
+
+
+## Testing tikz output in Jupyter notebooks
+
+**In [15]:**
+
+{% highlight python %}
+%load_ext tikzmagic
+{% endhighlight %}
+
+    The tikzmagic extension is already loaded. To reload it, use:
+      %reload_ext tikzmagic
+
+
+Then start each cell with the magic string: `%%tikz` followed by optional
+directives.
+
+_Directives:_
+
+    -s, --size: Pixel size of plots.
+                example: -s <width,height>. Default is -s 400,240
+
+    -f, --format: Plot format (png, svg or jpg)
+
+    -l, --library: TikZ libraries to load, separated by comma.
+                example: -l matrix,arrows.
+
+    -S, --save: Save a copy to "filename".
+
+    -p, --package: LaTeX packages to load, separated by comma.
+                example: -p pgfplots,textcomp
+
+    -e, --encoding: text encoding.
+                example: -e utf-8
+
+**In [16]:**
+
+{% highlight python %}
+%%tikz --scale 2 --size 300,300 -f svg
+\draw (0,0) rectangle (1,1);
+\filldraw (0.5,0.5) circle (.1);
+{% endhighlight %}
+
+
+![svg]({{ site.url }}/mypages/sample_files/sample_14_0.svg)
+
+
+**In [17]:**
+
+{% highlight python %}
+%%tikz -p pgfplots -f svg
+\begin{axis}[
+  xlabel=$x$,
+  ylabel={$f(x) = x^2 - x +4$}
+]
+\addplot {x^2 - x +4};
+\end{axis}
+{% endhighlight %}
+
+
+![svg]({{ site.url }}/mypages/sample_files/sample_15_0.svg)
+
+
+**In [18]:**
+
+{% highlight python %}
+%%tikz -p pgfplots -f svg -l calc,positioning
+\path node[fill=red](ROW_1){this is some line of text};
+\path node
+[   fill=green,
+    above=0mm of ROW_1.north west,
+    xshift=-5mm,
+    anchor=south west,
+    scale=0.5
+] (lt) {little tag};
+
+\path node
+[   fill=green,
+    above left=0mm and 5mm of lt.north west,
+    anchor=south west,
+    scale=0.5
+]{little tag};
+{% endhighlight %}
+
+
+![svg]({{ site.url }}/mypages/sample_files/sample_16_0.svg)
 
