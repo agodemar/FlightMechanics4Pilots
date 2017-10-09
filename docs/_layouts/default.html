@@ -3,18 +3,22 @@
 {% include head.html %}
 
   <body>
+
     <section class="page-header">
         {% include header.html %}
     </section>
 
+  <div id="content-wrapper">
+      <aside id="sidebar">
+        {% include sidemenu.html %}
+      </aside>
     <section class="main-content">
-
-      {% include topmenu.html %}
 
       {{ content }}
 
       {% include footer.html %}
     </section>
+  </div>
 
     {% if site.google_analytics %}
       <script type="text/javascript">

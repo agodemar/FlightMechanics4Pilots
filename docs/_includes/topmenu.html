@@ -18,7 +18,7 @@
       {% if page.categories contains 'menu'%}
         {% if page.categories contains 'references' or page.categories contains 'nomenclature'%}
           <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a> .
-          {% endif %}
+        {% endif %}
       {% endif %}
     {% endfor %}
   {% endfor %}

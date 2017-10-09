@@ -1,0 +1,27 @@
+toc:
+  - title: Home
+    url: /
+
+  - title: Introduction
+    url: /mypages/introduction/
+    subfolderitems:
+      - page: Types of Aircraft
+        url: /mypages/types-aircraft/
+      - page: Types of Propulsion
+        url: /mypages/types-propulsion/
+
+  - title: Aircraft and the Environment
+    url: /mypages/aircraft-environment/
+    subfolderitems:
+      - page: Dynamic Aviation
+        url: /mypages/dynamic-aviation/
+      - page: Standard Atmosphere
+        url: /mypages/standard-atmosphere/
+
+  - title: Flight Physics
+    url: /mypages/basic-laws/
+
+  - title: References
+    url: /mypages/references/
+  - title: Contact
+    url: /mypages/contact/

@@ -5,7 +5,7 @@ categories: [menu, content]
 permalink: /mypages/basic-laws/
 ---
 
-# Basic concepts of Newtonian Physics
+# Newtonian Physics Applied to Flight
 
 ## Basic Laws of Motion
 
