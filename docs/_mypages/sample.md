@@ -8,7 +8,7 @@ categories: [menu, notebook]
 ---
 # My sample Jupyter Notebook
 
-**In [9]:**
+**In [1]:**
 
 {% highlight python %}
 import sys
@@ -18,11 +18,11 @@ sys.version_info
 
 
 
-    sys.version_info(major=3, minor=6, micro=1, releaselevel='final', serial=0)
+    sys.version_info(major=3, minor=6, micro=2, releaselevel='final', serial=0)
 
 
 
-**In [10]:**
+**In [2]:**
 
 {% highlight python %}
 %matplotlib inline
@@ -30,7 +30,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 {% endhighlight %}
 
-**In [11]:**
+**In [3]:**
 
 {% highlight python %}
 x = np.linspace(0, 3*np.pi, 500)
@@ -58,7 +58,7 @@ is converted by Jupyter.
 
 ## Experiments
 
-**In [12]:**
+**In [4]:**
 
 {% highlight python %}
 import math
@@ -69,13 +69,13 @@ from IPython.display import display, Math, Latex, SVG
 
 ### The wing
 
-**In [13]:**
+**In [5]:**
 
 {% highlight python %}
 c_r = 4.0; c_t = 1.5; b = 27; Lambda_le = 25*math.pi/180
 {% endhighlight %}
 
-**In [14]:**
+**In [6]:**
 
 {% highlight python %}
 Latex(
@@ -101,15 +101,11 @@ Latex(
 
 ## Testing tikz output in Jupyter notebooks
 
-**In [15]:**
+**In [7]:**
 
 {% highlight python %}
 %load_ext tikzmagic
 {% endhighlight %}
-
-    The tikzmagic extension is already loaded. To reload it, use:
-      %reload_ext tikzmagic
-
 
 Then start each cell with the magic string: `%%tikz` followed by optional
 directives.
@@ -132,7 +128,7 @@ _Directives:_
     -e, --encoding: text encoding.
                 example: -e utf-8
 
-**In [16]:**
+**In [8]:**
 
 {% highlight python %}
 %%tikz --scale 2 --size 300,300 -f svg
@@ -144,7 +140,7 @@ _Directives:_
 ![svg]({{ site.url }}/mypages/sample_files/sample_14_0.svg)
 
 
-**In [17]:**
+**In [9]:**
 
 {% highlight python %}
 %%tikz -p pgfplots -f svg
@@ -160,7 +156,7 @@ _Directives:_
 ![svg]({{ site.url }}/mypages/sample_files/sample_15_0.svg)
 
 
-**In [18]:**
+**In [10]:**
 
 {% highlight python %}
 %%tikz -p pgfplots -f svg -l calc,positioning
@@ -183,4 +179,63 @@ _Directives:_
 
 
 ![svg]({{ site.url }}/mypages/sample_files/sample_16_0.svg)
+
+
+**In [11]:**
+
+{% highlight python %}
+%%tikz -p tkz-fct -l positioning -f svg -s 800,500
+
+\begin{scope}
+\tkzInit[xmin=-3,xmax=3,xstep=2, ymin=-3,ymax=3,ystep=2]
+\tkzGrid[sub,subxstep=1,subystep=1](-2,-2)(2,2)
+\tkzAxeXY
+\node (a) at (3,0) {hello};
+\end{scope}
+
+\begin{scope}[xshift=5cm]
+\tkzInit[xmin=-3,xmax=3,xstep=2, ymin=-3,ymax=3,ystep=2]
+\tkzGrid[sub,subxstep=1,subystep=1](-2,-2)(2,2)
+\tkzAxeXY
+\node (b) at (3,0) {hello};
+\tkzText[above,color=red](3,0){hello}
+\end{scope}
+{% endhighlight %}
+
+
+![svg]({{ site.url }}/mypages/sample_files/sample_17_0.svg)
+
+
+**In [12]:**
+
+{% highlight python %}
+%%tikz -l decorations.pathreplacing,shapes.misc -f svg -s 800,500
+
+\tikzset{
+    show curve controls/.style={
+        decoration={
+            show path construction,
+            curveto code={
+                \draw [blue, densely dashed]
+                    (\tikzinputsegmentfirst) -- (\tikzinputsegmentsupporta)
+                    node [at end, cross out, draw, solid, red, inner sep=2pt]{};
+                \draw [blue, densely dashed]
+                    (\tikzinputsegmentsupportb) -- (\tikzinputsegmentlast)
+                    node [at start, cross out, draw, solid, red, inner sep=2pt]{};
+            }
+        }, decorate
+    }
+}
+
+\draw [gray!50]  (0,0) -- (1,1) -- (3,1) -- (1,0)  -- (2,-1) -- cycle;
+\draw [show curve controls] plot [smooth cycle] coordinates {(0,0) (1,1) (3,1) (1,0) (2,-1)};
+\draw [red] plot [smooth cycle] coordinates {(0,0) (1,1) (3,1) (1,0) (2,-1)};
+
+\draw [gray!50, xshift=4cm]  (0,0) -- (1,1) -- (3,-1) -- (5,1) -- (7,-2);
+\draw [cyan, xshift=4cm, line width=1.2pt] plot [smooth, tension=2] coordinates { (0,0) (1,1) (3,-1) (5,1) (7,-2)};
+\draw [show curve controls,cyan, xshift=4cm] plot [smooth, tension=2] coordinates { (0,0) (1,1) (3,-1) (5,1) (7,-2)};
+{% endhighlight %}
+
+
+![svg]({{ site.url }}/mypages/sample_files/sample_18_0.svg)
 
