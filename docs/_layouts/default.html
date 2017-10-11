@@ -4,21 +4,20 @@
 
   <body>
 
-    <section class="page-header">
+    <div id="content-wrapper">
+      <section class="page-header">
         {% include header.html %}
-    </section>
-
-  <div id="content-wrapper">
+      </section>
       <aside id="sidebar">
         {% include sidemenu.html %}
       </aside>
-    <section class="main-content">
+      <section class="main-content">
 
-      {{ content }}
+        {{ content }}
 
-      {% include footer.html %}
-    </section>
-  </div>
+        {% include footer.html %}
+      </section>
+    </div>
 
     {% if site.google_analytics %}
       <script type="text/javascript">

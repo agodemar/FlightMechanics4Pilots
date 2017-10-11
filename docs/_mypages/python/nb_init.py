@@ -22,8 +22,11 @@ import subprocess
 # scientific calculations
 import numpy as np
 
-from pint import UnitRegistry     # units of measurements, 'pip install -U pint'
-unit = UnitRegistry()             # ex: 3*udm.m, 45*udm.cm, A.to(udm.km) conversion,...
+from pint import UnitRegistry
+unit = UnitRegistry()
+# units of measurements, 'pip install -U pint'
+# ex: 3*unit.m, 45*unit.cm, A.to(unit.km) conversion,...
+#     T = 274*unit.degK, T.magnitude -> 274
 
 # System
 import os
