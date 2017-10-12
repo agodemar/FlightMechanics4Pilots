@@ -55,7 +55,8 @@ def isa(altitude):
             p0 = p0_
             prevh = h[i]
 
-    density = pressure / (R * temperature)
+    density_ = pressure / (R * temperature)
+    density = density_.to_base_units()
     soundspeed = math.sqrt(
         gamma * R.magnitude * temperature.magnitude
         ) *unit.m/unit.sec
