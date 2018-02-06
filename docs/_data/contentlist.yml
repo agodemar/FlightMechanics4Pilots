@@ -21,7 +21,14 @@ toc:
         url: /mypages/dynamic-aviation/
 
   - title: Flight Physics
-    url: /mypages/basic-laws/
+    url: /mypages/flight-physics/
+    subfolderitems:
+      - page: Basic Newton Laws
+        url: /mypages/basic-laws/
+      - page: Lift
+        url: /mypages/lift/
+      - page: Drag
+        url: /mypages/drag/
 
   - title: References
     url: /mypages/references/

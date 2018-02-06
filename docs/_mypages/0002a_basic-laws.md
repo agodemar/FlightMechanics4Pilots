@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Basic Laws
-categories: [menu, content]
+categories: [menu, content, flight-physics]
 permalink: /mypages/basic-laws/
 ---
 
