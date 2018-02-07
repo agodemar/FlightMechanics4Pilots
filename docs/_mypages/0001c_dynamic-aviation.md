@@ -25,6 +25,19 @@ continuous, downward flow of air around the aircraft.
 
 # Temporary stuff
 
+{% include image.html
+  url="/assets/img/moto_long-simmetrico_accelerazioni.png"
+  width="70%"
+  description="Non-steady, wings level flight."
+  %}
+
+{% include image.html
+  url="/assets/img/ac_wind_axes_mb339.png"
+  width="70%"
+  description="Non-steady flight."
+  %}
+
+
 The atmospheric temperature...
 
 {% include image.html

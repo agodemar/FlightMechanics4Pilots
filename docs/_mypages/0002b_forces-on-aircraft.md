@@ -26,15 +26,15 @@ permalink: /mypages/force-on-aircraft/
   %}
 
 {% include image.html
-  url="/assets/img/ac_sideview_climb_forces.png"
-  width="60%"
-  description="Aircraft model in the vertical plane, with forces concentrated at the CoG."
+  url="/assets/img/ac_basic_definitions.png"
+  width="90%"
+  description="Linear and angular speed components, force and moment components in aircraft body-fixed frame. Aero-surface deflection angles."
   %}
 
 {% include image.html
-  url="/assets/img/ac_body_axes.png"
-  width="80%"
-  description="Aircraft body-fixed reference frame, with origin at CoG."
+  url="/assets/img/ac_wind_axes_crabbing.png"
+  width="70%"
+  description="Aircraft in non-symmetric flight and aerodynamic axes."
   %}
 
 {% include image.html
@@ -59,4 +59,28 @@ permalink: /mypages/force-on-aircraft/
   url="/assets/img/ac_aerobatic_pull_2.png"
   width="100%"
   description="Two airplanes, two converging pull-up maneuvers."
+  %}
+
+{% include image.html
+  url="/assets/img/ac_pqr_omega.png"
+  width="90%"
+  description="Body-axis components of aircraft angular velocity $\mathbf{\Omega}$."
+  %}
+
+{% include image.html
+  url="/assets/img/ac_flat_earth_NED.png"
+  width="90%"
+  description="North-East-Down (NED) conventional Earth-fixed reference frame."
+  %}
+
+{% include image.html
+  url="/assets/img/ac_euler_gimbal.png"
+  width="90%"
+  description="Aircraft attitude angles (Euler angles) with respect to a Earth-fixed (NED) reference frame."
+  %}
+
+{% include image.html
+  url="/assets/img/ac_ground_track_HUD.png"
+  width="90%"
+  description="Velocity vector $\mathbf{V}$, ground track, airplane attitude angles $\phi$ and $\theta$ ($\psi=0$)."
   %}
