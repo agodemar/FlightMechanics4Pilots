@@ -14,6 +14,12 @@ permalink: /mypages/anatomy-conventional-aircraft/
   %}
 
 {% include image.html
+  url="/assets/img/ac_topview.png"
+  width="60%"
+  description="Aircraft topview. Wing span $b=2s$."
+  %}
+
+{% include image.html
   url="/assets/img/ac_wing_fuselage_definitions_1.png"
   width="65%"
   description="Nomenclature of wing-fuselage combination (sideview)."
