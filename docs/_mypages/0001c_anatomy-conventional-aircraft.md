@@ -19,29 +19,37 @@ The figure below represents a conventional three-axis architecture aircraft and 
 
 The above cartesian reference is called *body-frame*, having the origin at the aircraft center of gravity (CoG) $G$ and the three oriented as shown. For this reason the *body-axes* are also named $x_\mathrm{B}$, $y_\mathrm{B}$, and $z_\mathrm{B}$.
 
+The figure below shows a top view af an aircraft.
+
 {% include image.html
   url="/assets/img/ac_topview.png"
   width="60%"
-  description="Aircraft topview. Wing span $b=2s$."
+  description="Aircraft top view. Wing span $b=2s$."
   %}
+
+Two of the quantities that characterize the wing planform are also shown: the total span $b=2s$, and the mean chord $\bar{c}$ --- taken over all the chords $c(y)$ at wing sections $y$ for $-\frac{b}{2} \le y \le +\frac{b}{2}$.
+
+A more detailed nomenclature is given by the next drawing, representing a top and a side view of a wing-fuselage combination.
 
 {% include image.html
   url="/assets/img/ac_wing_fuselage_definitions_1.png"
   width="65%"
-  description="Nomenclature of wing-fuselage combination (sideview)."
+  description="Nomenclature of wing-fuselage combination (side view)."
   %}
 
-{% include image.html
-  url="/assets/img/ac_sideview_mu_x.png"
-  width="70%"
-  description="Aircraft sideview and wing zero-lift line."
-  %}
+The axes $x_\mathrm{C}$, $y_\mathrm{C}$, and $z_\mathrm{C}$ are what designers call *construction axes*. Like the body-axes, also the construction axes are fixed with the aircraft but are oriented differently. In the above illustration the various quantities are used to identify the position of the wing relative to the fuselage body.
 
 {% include image.html
   url="/assets/img/ac_wing_fuselage_definitions_2.png"
   width="65%"
-  description="Nomenclature of wing-fuselage combination (frontview)."
+  description="Nomenclature of wing-fuselage combination (front view)."
   %}
+
+  {% include image.html
+    url="/assets/img/ac_sideview_mu_x.png"
+    width="70%"
+    description="Aircraft side view and wing zero-lift line."
+    %}
 
 {% include image.html
   url="/assets/img/fuselage_isoview_c172.png"
