@@ -26,9 +26,9 @@ permalink: /mypages/force-on-aircraft/
   %}
 
 {% include image.html
-  url="/assets/img/ac_basic_definitions.png"
+  url="/assets/img/ac_forces_moments_velocities.png"
   width="90%"
-  description="Linear and angular speed components, force and moment components in aircraft body-fixed frame. Aero-surface deflection angles."
+  description="Linear and angular speed components, force and moment components in aircraft body-fixed frame."
   %}
 
 {% include image.html

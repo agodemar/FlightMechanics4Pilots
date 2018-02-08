@@ -32,6 +32,13 @@ continuous, downward flow of air around the aircraft.
   %}
 
 {% include image.html
+  url="/assets/img/ac_landing_crabbing.png"
+  width="75%"
+  description="Crabbing flight in a cross wind landing."
+  %}
+
+
+{% include image.html
   url="/assets/img/ac_wind_axes_mb339.png"
   width="70%"
   description="Non-steady flight."
