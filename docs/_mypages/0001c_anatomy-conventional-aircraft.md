@@ -11,7 +11,7 @@ This section introduces a set of definitions pertaining the architecture of conv
 
 ## Aircraft Body Axes
 
-The figure below represents a conventional three-axis architecture aircraft and a reference frame $$\{ G, x, y, z \}$$ fixed with vehicle.
+The figure below represents a conventional three-axis architecture aircraft and a reference frame $$\{ G, x, y, z \}$$ fixed with the vehicle.
 
 {% include image.html
   url="/assets/img/ac_body_axes.png"
@@ -19,7 +19,7 @@ The figure below represents a conventional three-axis architecture aircraft and 
   description="Aircraft body-fixed reference frame, with origin at CoG."
   %}
 
-The above cartesian reference is called *body-frame*, having the origin at the aircraft center of gravity (CoG) $G$ and the three oriented as shown. For this reason the *body-axes* are also named $x_\mathrm{B}$, $y_\mathrm{B}$, and $z_\mathrm{B}$.
+The above cartesian reference is called *body-frame*, having the origin $G$ at the aircraft center of gravity (CoG) and the three oriented as shown. For this reason the *body-axes* are also named $x_\mathrm{B}$, $y_\mathrm{B}$, and $z_\mathrm{B}$. The first axis $x_\mathrm{B}$ is directed along the fuselage longitudinal dimension and points forward. The second body axis $y_\mathrm{B}$ is normal to the fuselage symmetry plane and is positively oriented towards the right wing tip. The third axis $z_\mathrm{B}$ completes the cartesian frame and points towards the fuselage belly.
 
 ## Planform definitions
 
@@ -52,7 +52,7 @@ A more detailed nomenclature is given by the next drawing, representing a top an
   description="Nomenclature of wing-fuselage combination (side view)."
   %}
 
-The axes $x_\mathrm{C}$, $y_\mathrm{C}$, and $z_\mathrm{C}$ are what designers call *construction axes*. Like the body-axes, also the construction axes are fixed with the aircraft but are oriented differently. In the above illustration the various quantities are used to identify the position of the wing relative to the fuselage body. Typically, the body and construction axes $x_\mathrm{B}$ and $x_\mathrm{C}$ are parallel, but the latter is not baricentric and passes through the fuselage nose.
+The axes $x_\mathrm{C}$, $y_\mathrm{C}$, and $z_\mathrm{C}$ are what designers call *construction axes*. Like the body-axes, also the construction axes are fixed with the aircraft but are oriented differently. In the above illustration the various quantities are used to identify the position of the wing relative to the fuselage body. Typically, the body and construction axes $x_\mathrm{B}$ and $x_\mathrm{C}$ are parallel, but the latter is not baricentric, passes through the fuselage nose and points towards the fuselage tail.
 
 The quantities represented above have the following significance:
 
@@ -78,11 +78,42 @@ Two more quantities are introduced:
 
 ## The Zero-Lift direction of a Wing  
 
-An important angle, related to the lift capacity of the wing of a given aircraft, is shown in the next figure.
+An important angle, related to the lift capacity of the wing of a given aircraft, is that formed by the relative wind velocity $$\mathbf{V}_{\!\infty}$$ with the wing zero-lift direction.
+The figure below shows a side view of a wing where the root and tip airfoils are emphasized.
+All wing sections, at each possible spanwise station $-\frac{b}{2} \le y \le +\frac{b}{2}$, have a chord $c(y)$ which is geometrically twisted with respect to the root chord direction. The local geometric twist angle is called $\varepsilon_{\mathrm{g}}(y)$. The geometric twist is negative by definition if the local chord is pitched down with respect to the root chord --- this is called *wash out* angle by designers.
+
+{% include image.html
+  url="/assets/img/Wing_Twist.png"
+  width="100%"
+  description="Wing side view. Root and tip airfoils with local zero-lift lines."
+  %}
+
+The generic wing section at the station $y$ is an airfoil, i.e. an aerodynamic shape characterized by a local zero-lift direction inclined of an angle $\alpha_{0\ell}(y)$ with respect to the local chord --- a negative value for positively cambered profiles.
+Therefore, the quantities represented above have the following significance:
+- $\alpha_{0\ell,\mathrm{root}}$, zero-lift angle of the wing root airfoil;
+- $\alpha_{0\ell,\mathrm{tip}}$, zero-lift angle of the wing tip airfoil;
+- $\varepsilon_{\mathrm{g,tip}}$, geometric wing twist.
+
+By definition, the angle of attack of a three-dimensional wing is the angle $\alpha_\mathrm{W}$ formed by the relative wind direction with the root chord line. A positive wing angle of attack is represented in the next figure.
+It is important to recognize that the relative wind might invest the finite wing in such a way that the total lift $L$ developed by the surface is zero. The wing zero-lift direction is also represented below, forming an angle $\alpha_{0L,\mathrm{W}}$ with the root chord.
+
+{% include image.html
+  url="/assets/img/Alpha_Zero_Lift.png"
+  width="100%"
+  description="Wing side view. Wing zero-lift line."
+  %}
+
+The above picture shows a typical arrangement of wing airfoils, with the resulting wing zero-lift line pitched up with respect to the root chord. This corresponds to a negative wing angle of attack. Aerodynamicists elegantly explain that the lift of a wing is due to the *absolute angle of attack* $\alpha_{\mathrm{a,W}} = \alpha_{\mathrm{W}} - \alpha_{0L,\mathrm{W}}$, i.e. the angle of the relative wind and the zero-lift line. A zero absolute angle of attack means a zero wing lift; an $\alpha_{\mathrm{a,W}} < 0$ results in a downward oriented, hence negative, lift; a positive $\alpha_{\mathrm{a,W}}$ corresponds to a positive $L$.
+
+The angle
+\\[
+\mu_x = \alpha_\mathrm{B} + i_\mathrm{w} - \alpha_{0L,\mathrm{W}}
+\\]
+is shown in the next figure.
 
 {% include image.html
   url="/assets/img/ac_sideview_mu_x.png"
-  width="70%"
+  width="90%"
   description="Aircraft side view and wing zero-lift line."
   %}
 
