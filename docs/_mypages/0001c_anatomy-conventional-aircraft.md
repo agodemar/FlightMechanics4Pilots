@@ -80,8 +80,11 @@ Two more quantities are introduced:
 
 ## The Wing Zero-Lift Direction in Aircraft Configurations
 
-An important angle, related to the lift capacity of the wing of a given aircraft, is that formed by the relative wind velocity vector $$\mathbf{V}_{\!\infty}$$ with the wing zero-lift direction.
-The figure below shows a side view of a wing where the root and tip airfoils are emphasized.
+An important angle, related to the lift capacity of the wing of a given aircraft, is that formed by the relative wind velocity vector $$\mathbf{V}_{\!\infty}$$ with the wing zero-lift direction. This direction is defined below.
+
+### Wing Twist and Local Airfoil Zero-Lift Angles
+
+The next figure shows a side view of a wing where the root and tip airfoils are emphasized.
 All wing sections, at each possible spanwise station $-\frac{b}{2} \le y \le +\frac{b}{2}$, have a chord $c(y)$ which is geometrically twisted with respect to the root chord direction. The local geometric twist angle is called $\varepsilon_{\mathrm{g}}(y)$. The geometric twist is negative by definition if the local chord is pitched down with respect to the root chord --- this is called *wash out* angle by designers.
 
 {% include image.html
@@ -120,7 +123,18 @@ i.e. the angle between the relative wind and the zero-lift line. A zero absolute
 
 From the above definitions, considering that a wing of a conventional aircraft is attached to the fuselage, from the perspective of flight an angle of attack *of the aircraft* is the angle $\alpha_\mathrm{B}$ formed by the relative wind with the reference axis $x_\mathrm{B}$ of the fuselage. This angle is also reported in the above figure.
 
-Consider a wings level flight, occurring along a horizontal trajectory of the CoG with no atmospheric wind. In this circumstance the vector $$\mathbf{V}_{\!\infty}$$ is horizontal and the opposite of the flight velocity. An nonzero angle $\alpha_\mathrm{B}$ corresponds to a fuselage travelling with pitched attitude with respect to the horizontal. The effective angle formed by $$\mathbf{V}_{\!\infty}$$ and the wing zero-lift line is $\alpha_\mathrm{B} + i_\mathrm{w} - \alpha_{0L,\mathrm{W}}$, i.e. the *aircraft absolute angle of attack* $\alpha_\mathrm{a,B}$. In the particular case of a flight with horizontal fuselage, i.e. $\alpha_\mathrm{B} = 0$, the aircraft absolute angle of attack becomes:
+### Wing Zero-Lift Line Representation in Aircraft Body-Axes
+
+Consider a wings level flight, occurring along a horizontal trajectory of the CoG with no atmospheric wind. In this circumstance the vector $$\mathbf{V}_{\!\infty}$$ is horizontal and opposite to the flight velocity $\mathbf{V}$. A nonzero angle $\alpha_\mathrm{B}$ corresponds to a fuselage travelling with a pitched attitude with respect to the horizontal, as represented in the next figure. The effective angle formed by $$\mathbf{V}_{\!\infty}$$ and the wing zero-lift line is $\alpha_\mathrm{B} + i_\mathrm{w} - \alpha_{0L,\mathrm{W}}$, i.e. the *aircraft absolute angle of attack* $\alpha_\mathrm{a,B}$.
+
+
+{% include image.html
+  url="/assets/img/ac_longitudinal_symmetric_mux.png"
+  width="80%"
+  description="Wings level flight along a horizontal trajectory."
+  %}
+
+In the particular case of a flight with horizontal fuselage, i.e. $\alpha_\mathrm{B} = 0$, the aircraft absolute angle of attack becomes:
 
 \begin{equation}
 \mu_x = i_\mathrm{w} - \alpha_{0L,\mathrm{W}}
@@ -139,17 +153,26 @@ In a wings level flight, along a horizontal trajectory, with a zero pitching att
 
 ## Fuselage definitions
 
+Some geometric parameters of a fuselage are represented in the next drawing.
+
 {% include image.html
   url="/assets/img/fuselage_isoview_c172.png"
-  width="70%"
+  width="100%"
   description="Nomenclature of the fuselage."
   %}
 
+This figure shows the common definition of the two *aerodynamic angles* that define the orientation of the relative wind velocity vector with respect to the fuselage, and hence to the entire aircraft. These angles are $\alpha_\mathrm{B}$ --- already discussed above --- and the *sideslip* angle $\beta_\mathrm{B}$ (or simply $\beta$).
+
+It might occur in flight that the relative wind is out of the aircraft symmetry plane. When the the pilot sees a current coming from the right it means that the aircraft is sideslipping with a positive angle $\beta$. This is the angle formed by the velocity vector $$\mathbf{V}_{\!\infty}$$ and the plane $x_\mathrm{C} z_\mathrm{C} = x_\mathrm{B} z_\mathrm{B}$. The projection of $$\mathbf{V}_{\!\infty}$$ into the plane is then used to measure the aircraft angle of attack $\alpha_\mathrm{B}$.
+
+
 ## The Horizontal Tailplane
+
+The geometric parameters defining the position of the horizontal tailplane with respect to the fuselage are shown in the next two figures.
 
 {% include image.html
   url="/assets/img/wing_fuselage_htail_definitions_1.png"
-  width="90%"
+  width="100%"
   description="Nomenclature of the horizontal tailplane."
   %}
 
@@ -158,6 +181,8 @@ In a wings level flight, along a horizontal trajectory, with a zero pitching att
   width="100%"
   description="Nomenclature of the horizontal tailplane."
   %}
+
+The tailplane is anything other than a small wing placed in a rear position with respect to the main lifting surface. This is a traditional arrangement that ensures a longitudinal stability to the aerodynamic configuration.
 
 {% include image.html
   url="/assets/img/htail_planform.png"
