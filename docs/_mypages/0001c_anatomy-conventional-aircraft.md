@@ -7,11 +7,11 @@ permalink: /mypages/anatomy-conventional-aircraft/
 
 # The Anatomy of Conventional Aircraft Configurations
 
-This section introduces a set of definitions pertaining the architecture of conventional fixed-wing airplanes, which are useful in the discussion of aircraft performance characteristics. Since pilots already possess a knowledge of aircraft fundamentals by training, the concepts introduced here are more oriented towards and flight theory.
+This section introduces a set of definitions pertaining the architecture of conventional fixed-wing airplanes, which are useful in the discussion of aircraft performance characteristics as well as of aircraft stability and control. Since pilots already possess a knowledge of aircraft fundamentals by training, the various concepts are introduced here in view of an effective presentation of the flight theory as an engineering discipline. The knowledge of basic facts in aerodynamics is assumed.
 
 ## Aircraft Body Axes
 
-The figure below represents a conventional three-axis architecture aircraft and a reference frame $$\{ G, x, y, z \}$$ fixed with the vehicle.
+The figure below represents an airplane with a conventional three-axis architecture aircraft. A reference frame $$\{ G, x, y, z \}$$ fixed with the vehicle is also shown.
 
 {% include image.html
   url="/assets/img/ac_body_axes.png"
@@ -19,7 +19,7 @@ The figure below represents a conventional three-axis architecture aircraft and 
   description="Aircraft body-fixed reference frame, with origin at CoG."
   %}
 
-The above cartesian reference is called *body-frame*, having the origin $G$ at the aircraft center of gravity (CoG) and the three oriented as shown. For this reason the *body-axes* are also named $x_\mathrm{B}$, $y_\mathrm{B}$, and $z_\mathrm{B}$. The first axis $x_\mathrm{B}$ is directed along the fuselage longitudinal dimension and points forward. The second body axis $y_\mathrm{B}$ is normal to the fuselage symmetry plane and is positively oriented towards the right wing tip. The third axis $z_\mathrm{B}$ completes the cartesian frame and points towards the fuselage belly.
+This cartesian reference is called *aircraft body-frame*. The origin $G$ coincides with the aircraft center of gravity (CoG) and the three axes are oriented as shown. For this reason the *body-axes* are also named $x_\mathrm{B}$, $y_\mathrm{B}$, and $z_\mathrm{B}$. The first axis $x_\mathrm{B}$ is directed along the fuselage longitudinal dimension and points forwards. The second body axis $y_\mathrm{B}$ is normal to the fuselage symmetry plane and is positively oriented towards the right wing tip. The third axis $z_\mathrm{B}$ completes the cartesian frame and points towards the fuselage belly.
 
 ## Planform definitions
 
@@ -33,14 +33,16 @@ The figure below shows a top view af an aircraft.
 
 Two of the quantities that characterize the wing planform are also shown:
 
-- $b=2s$, wing span;
-- $\bar{c}$, mean chord taken over all the chords $c(y)$ at wing sections $y$ for $-\frac{b}{2} \le y \le +\frac{b}{2}$.
+- $b=2s$, the wing span;
+- $\bar{c}$, the mean chord, taken over all the chords $c(y)$ at wing sections $y$ for $-\frac{b}{2} \le y \le +\frac{b}{2}$.
 
 {% include image.html
   url="/assets/img/wing_basic.png"
   width="80%"
   description="A wing and its profiles (sections)."
   %}
+
+The sections of a wing with planes parallel to the fuselage symmetry plane $x_\mathrm{B}z_\mathrm{B}$ have the shapes of airfoils. Wings owe to them its capacity to develop a lift force able to support the weight of the aircraft in flight, with a relatively small resistance.
 
 ## Wing-Fuselage definitions
 
@@ -52,13 +54,13 @@ A more detailed nomenclature is given by the next drawing, representing a top an
   description="Nomenclature of wing-fuselage combination (side view)."
   %}
 
-The axes $x_\mathrm{C}$, $y_\mathrm{C}$, and $z_\mathrm{C}$ are what designers call *construction axes*. Like the body-axes, also the construction axes are fixed with the aircraft but are oriented differently. In the above illustration the various quantities are used to identify the position of the wing relative to the fuselage body. Typically, the body and construction axes $x_\mathrm{B}$ and $x_\mathrm{C}$ are parallel, but the latter is not baricentric, passes through the fuselage nose and points towards the fuselage tail.
+The axes $x_\mathrm{C}$, $y_\mathrm{C}$, and $z_\mathrm{C}$ are what designers call *construction axes*. Like the body-axes, also the construction axes are fixed with the aircraft but are oriented differently. In the above illustration the various quantities are used to identify the position of the wing relative to the fuselage body. Typically, the body and construction axes $x_\mathrm{B}$ and $x_\mathrm{C}$ are parallel, but the latter is non-baricentric, originates at the fuselage nose and points backwards.
 
 The quantities represented above have the following significance:
 
 - $l_\mathrm{B}$, fuselage length;
 - $b_\mathrm{B}$, $h_\mathrm{B}$, maximum fuselage width and fuselage height;
-- $A$, wing apex point, i.e. leading edge of wing root when wing leading edge line is ideally extended up to the symmetry plane;
+- $A$, wing apex point, i.e. leading edge of the wing root when wing leading edge line is ideally extended up to the symmetry plane;
 - $A^\star$, leading edge of the effective wing root, i.e. of the attachment profile at the wing-fuselage junction;
 - $c_{\mathrm{r}}^\star$, chord of the effective wing root;
 - $i_{\mathrm{W}}^\star$, wing incidence or wing *rigging angle*, i.e. a mounting angle formed by the wing root chord and the fuselage reference line $x_\mathrm{C}$.
@@ -76,9 +78,9 @@ Two more quantities are introduced:
 - $z_0$, the vertical position of the wing with respect to the fuselage reference line $y_\mathrm{C}$.
 
 
-## The Zero-Lift direction of a Wing  
+## The Wing Zero-Lift Direction in Aircraft Configurations
 
-An important angle, related to the lift capacity of the wing of a given aircraft, is that formed by the relative wind velocity $$\mathbf{V}_{\!\infty}$$ with the wing zero-lift direction.
+An important angle, related to the lift capacity of the wing of a given aircraft, is that formed by the relative wind velocity vector $$\mathbf{V}_{\!\infty}$$ with the wing zero-lift direction.
 The figure below shows a side view of a wing where the root and tip airfoils are emphasized.
 All wing sections, at each possible spanwise station $-\frac{b}{2} \le y \le +\frac{b}{2}$, have a chord $c(y)$ which is geometrically twisted with respect to the root chord direction. The local geometric twist angle is called $\varepsilon_{\mathrm{g}}(y)$. The geometric twist is negative by definition if the local chord is pitched down with respect to the root chord --- this is called *wash out* angle by designers.
 
@@ -94,6 +96,8 @@ Therefore, the quantities represented above have the following significance:
 - $\alpha_{0\ell,\mathrm{tip}}$, zero-lift angle of the wing tip airfoil;
 - $\varepsilon_{\mathrm{g,tip}}$, geometric wing twist.
 
+### Wing angle of attack
+
 By definition, the angle of attack of a three-dimensional wing is the angle $\alpha_\mathrm{W}$ formed by the relative wind direction with the root chord line. A positive wing angle of attack is represented in the next figure.
 It is important to recognize that the relative wind might invest the finite wing in such a way that the total lift $L$ developed by the surface is zero. The wing zero-lift direction is also represented below, forming an angle $\alpha_{0L,\mathrm{W}}$ with the root chord.
 
@@ -103,13 +107,27 @@ It is important to recognize that the relative wind might invest the finite wing
   description="Wing side view. Wing zero-lift line."
   %}
 
-The above picture shows a typical arrangement of wing airfoils, with the resulting wing zero-lift line pitched up with respect to the root chord. This corresponds to a negative wing angle of attack. Aerodynamicists elegantly explain that the lift of a wing is due to the *absolute angle of attack* $\alpha_{\mathrm{a,W}} = \alpha_{\mathrm{W}} - \alpha_{0L,\mathrm{W}}$, i.e. the angle of the relative wind and the zero-lift line. A zero absolute angle of attack means a zero wing lift; an $\alpha_{\mathrm{a,W}} < 0$ results in a downward oriented, hence negative, lift; a positive $\alpha_{\mathrm{a,W}}$ corresponds to a positive $L$.
+The above picture shows a typical arrangement of wing airfoils, with the resulting wing zero-lift line pitched up with respect to the root chord. This corresponds to a negative wing angle of attack. Aerodynamicists elegantly explain that the lift of a wing is due to the *absolute angle of attack*
 
-The angle
-\\[
-\mu_x = \alpha_\mathrm{B} + i_\mathrm{w} - \alpha_{0L,\mathrm{W}}
-\\]
-is shown in the next figure.
+\begin{equation}
+\alpha_{\mathrm{a,W}} = \alpha_{\mathrm{W}} - \alpha_{0L,\mathrm{W}}
+\label{eq:Wing:Absolute:AoA}
+\end{equation}
+
+i.e. the angle between the relative wind and the zero-lift line. A zero absolute angle of attack means a zero wing lift; an $\alpha_{\mathrm{a,W}} < 0$ results in a downward oriented, hence negative, lift; a positive $\alpha_{\mathrm{a,W}}$ corresponds to a positive $L$.
+
+### Aircraft angle of attack
+
+From the above definitions, considering that a wing of a conventional aircraft is attached to the fuselage, from the perspective of flight an angle of attack *of the aircraft* is the angle $\alpha_\mathrm{B}$ formed by the relative wind with the reference axis $x_\mathrm{B}$ of the fuselage. This angle is also reported in the above figure.
+
+Consider a wings level flight, occurring along a horizontal trajectory of the CoG with no atmospheric wind. In this circumstance the vector $$\mathbf{V}_{\!\infty}$$ is horizontal and the opposite of the flight velocity. An nonzero angle $\alpha_\mathrm{B}$ corresponds to a fuselage travelling with pitched attitude with respect to the horizontal. The effective angle formed by $$\mathbf{V}_{\!\infty}$$ and the wing zero-lift line is $\alpha_\mathrm{B} + i_\mathrm{w} - \alpha_{0L,\mathrm{W}}$, i.e. the *aircraft absolute angle of attack* $\alpha_\mathrm{a,B}$. In the particular case of a flight with horizontal fuselage, i.e. $\alpha_\mathrm{B} = 0$, the aircraft absolute angle of attack becomes:
+
+\begin{equation}
+\mu_x = i_\mathrm{w} - \alpha_{0L,\mathrm{W}}
+\label{eq:AC:mux}
+\end{equation}
+
+This angle is shown in the next figure.
 
 {% include image.html
   url="/assets/img/ac_sideview_mu_x.png"
@@ -117,7 +135,7 @@ is shown in the next figure.
   description="Aircraft side view and wing zero-lift line."
   %}
 
-The angle $\mu_x$ is that formed by the wing zero-lift direction with the longitudinal body axis $x_\mathrm{B}$.
+In a wings level flight, along a horizontal trajectory, with a zero pitching attitude of the fuselage, the angle $\mu_x$ is responsible for the lift supporting the aircraft (assuming, approximately, that the whole lift is given by the wing).
 
 ## Fuselage definitions
 
@@ -131,13 +149,13 @@ The angle $\mu_x$ is that formed by the wing zero-lift direction with the longit
 
 {% include image.html
   url="/assets/img/wing_fuselage_htail_definitions_1.png"
-  width="70%"
+  width="90%"
   description="Nomenclature of the horizontal tailplane."
   %}
 
 {% include image.html
   url="/assets/img/fuselage_isoview_c172_Htail.png"
-  width="70%"
+  width="100%"
   description="Nomenclature of the horizontal tailplane."
   %}
 
@@ -149,19 +167,19 @@ The angle $\mu_x$ is that formed by the wing zero-lift direction with the longit
 
 {% include image.html
   url="/assets/img/horizontal_tail_profile.png"
-  width="50%"
+  width="60%"
   description="Horizontal tailplane section."
   %}
 
 {% include image.html
   url="/assets/img/horizontal_tail_profile_deltaE.png"
-  width="50%"
+  width="60%"
   description="Elevator deflection."
   %}
 
 {% include image.html
   url="/assets/img/horizontal_tail_profile_deltaE_deltaT.png"
-  width="50%"
+  width="60%"
   description="Elevator and trim tab combined deflections."
   %}
 
@@ -169,13 +187,13 @@ The angle $\mu_x$ is that formed by the wing zero-lift direction with the longit
 
 {% include image.html
   url="/assets/img/fuselage_isoview_c172_Vtail.png"
-  width="80%"
+  width="100%"
   description="Nomenclature of the vertical tailplane."
   %}
 
 {% include image.html
   url="/assets/img/ac_rudder_control.png"
-  width="80%"
+  width="100%"
   description="Rudder deflection."
   %}
 
