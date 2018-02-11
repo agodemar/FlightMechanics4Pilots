@@ -182,19 +182,27 @@ The geometric parameters defining the position of the horizontal tailplane with 
   description="Nomenclature of the horizontal tailplane."
   %}
 
+All parameters in the above drawings are defined similarly to their wing's counterparts. In case of a horizontal tail a subscript $( \cdot )_ {\mathrm{H}}$ is used. The distance $l_\mathrm{H}$ is an important feature of conventional aircraft configurations, that is the arm between the tail *aerodynamic center* and the aircraft CoG.
+
 The tailplane is anything other than a small wing placed in a rear position with respect to the main lifting surface. This is a traditional arrangement that ensures a longitudinal stability to the aerodynamic configuration.
+
+The next three figures give the details of a traditional tailplane with *elevators*. These movable surfaces, placed symmetrically on both half-tails, rotate of the same angle $\delta_\mathrm{e}$ and provide piching control to the pilot.
 
 {% include image.html
   url="/assets/img/htail_planform.png"
-  width="70%"
+  width="90%"
   description="Horizontal tailplane planform."
   %}
 
+The elevator deflection angle $\delta_\mathrm{e}$ is shown in the next tailplane section drawings.
+
 {% include image.html
   url="/assets/img/horizontal_tail_profile.png"
-  width="60%"
+  width="70%"
   description="Horizontal tailplane section."
   %}
+
+Typycally, elevators have smaller movable *tabs*, called *trim tabs*, whose rotation $\delta_\mathrm{t}$ provides additional finer control of longitudinal equilibrium flight and of piloting loads.
 
 {% include image.html
   url="/assets/img/horizontal_tail_profile_deltaE.png"
@@ -204,17 +212,28 @@ The tailplane is anything other than a small wing placed in a rear position with
 
 {% include image.html
   url="/assets/img/horizontal_tail_profile_deltaE_deltaT.png"
-  width="60%"
+  width="70%"
   description="Elevator and trim tab combined deflections."
   %}
 
 ## The Vertical Tailplane
+
+A nomenclature of the geometric parameters related to the vertical tailplane is
+reported in the next figure.
 
 {% include image.html
   url="/assets/img/fuselage_isoview_c172_Vtail.png"
   width="100%"
   description="Nomenclature of the vertical tailplane."
   %}
+
+In case of a vertical tail a subscript $( \cdot )_ {\mathrm{V}}$ is used for all parameters similar to those related to the wing and to the horizontal tail. The distance $l_\mathrm{V}$ is an important feature of conventional aircraft configurations, that is the arm between the vertical tail *aerodynamic center* and the aircraft CoG.
+
+The vertical tailplane is anything other than a small half-wing placed in a rear position with respect to the main lifting surface. This is a traditional arrangement that ensures a directional stability to the aerodynamic configuration.
+
+The figure below shows a typical rudder deflected to control the aircraft yawing motion.
+When the pilot acts on cockpit pedals the rudder rotates of the angle $\delta_\mathrm{r}$ around
+its hinge line. A positive deflection is shown in the picture.
 
 {% include image.html
   url="/assets/img/ac_rudder_control.png"
@@ -224,10 +243,18 @@ The tailplane is anything other than a small wing placed in a rear position with
 
 ## Conventional Flight Controls
 
+The conventional flight controls of a military jet trainer (Aermacchi MB-339) are shown in the next figure.
+
+{% include image.html
+  url="/assets/img/MB339CD.png"
+  width="80%"
+  description="Top view of Aermacchi MB-339CD."
+  %}
+
 {% include image.html
   url="/assets/img/aerosurface_command_line.png"
   width="70%"
-  description="Flight controls."
+  description="Flight controls of a militaryb trainer jet."
   %}
 
 {% include image.html
