@@ -36,6 +36,20 @@ toc:
       - page: Drag
         url: /mypages/drag/
 
+  - title: Aircraft Performance
+    url: /mypages/performance/
+    subfolderitems:
+      - page: Cruising Flight
+        url: /mypages/cruise/
+
+  - title: Aircraft Stability and Control
+    url: /mypages/stability-control/
+    subfolderitems:
+      - page: Longitudinal Stability
+        url: /mypages/longitudinal-stability/
+      - page: Lateral-Directional Stability
+        url: /mypages/lateral-directional-stability/
+
   - title: References
     url: /mypages/references/
   - title: Contact

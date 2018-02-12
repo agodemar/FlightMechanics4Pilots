@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Types of Aircraft
-categories: [menu, content, introduction]
+categories: [menu, content, introduction, types-aircraft]
 permalink: /mypages/types-aircraft/
 ---
 

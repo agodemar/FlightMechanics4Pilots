@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Types of Propulsion
-categories: [menu, content, introduction]
+categories: [menu, content, introduction, types-propulsion]
 permalink: /mypages/types-propulsion/
 ---
 

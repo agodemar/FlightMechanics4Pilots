@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Types of Aircraft
-categories: [menu, content, introduction]
+title: Basic Anatomy of Airplane Flight
+categories: [menu, content, introduction, anatomy-flight]
 permalink: /mypages/anatomy-flight/
 ---
 
-# The ''Anatomy'' of Airplane Flight
+# Basic ''Anatomy'' of Airplane Flight
 
 {% include image.html
   url="/assets/img/ac_aerodynamic_angles.png"
