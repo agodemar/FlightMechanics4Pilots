@@ -43,13 +43,3 @@ continuous, downward flow of air around the aircraft.
   width="70%"
   description="Non-steady flight."
   %}
-
-
-The atmospheric temperature...
-
-{% include image.html
-  url="/assets/img/T_h_ISA.png"
-  width="90%"
-  description="Air temperature variation with altitude according to the
-    International Standard Atmosphere (ISA) model."
-  %}

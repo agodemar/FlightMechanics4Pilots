@@ -92,7 +92,12 @@ the troposphere and again in the mesosphere.
 The rate of change of temperature with height $h$ in the atmospheric layers at a
 place and time is called its *temperature lapse rate* or simply *lapse rate*,
 which is denoted by $\lambda$. The lapse rate is considered positive if the temperature
-decreases with height, and vice versa; $\lambda = -\mathrm{d}T/\mathrm{d}h$.
+decreases with height, and vice versa.
+\begin{equation}
+\lambda = - \frac{\mathrm{d}T}{\mathrm{d}h}
+\label{eq:Lapse:Rate}
+\end{equation}
+
 The lapse rate is zero in isothermal layers. The lapse rate depends on whether the
 thermal process is adiabatic or nonadiabatic and on the moisture content in the
 atmosphere.
@@ -106,6 +111,9 @@ Similarly, in the descending layers, air is compressed and warms adiabatically.
 
 The dry air adiabatic lapse rate (DALR) is 3&nbsp;°C per 1000&nbsp;ft (304.8&nbsp;m),
 or 1&nbsp;°C per 100&nbsp;m.
+The saturated-air adiabatic lapse rate (SALR) is 1.5&nbsp;°C per 1000&nbsp;ft or 0.5&nbsp;°C
+per 100&nbsp;m. Therefore,
+$\lambda_\mathrm{SALR} = \frac{1}{2} \lambda_\mathrm{DALR}$.
 
 ### Atmospheric Pressure
 
@@ -165,3 +173,35 @@ Air density is an invisible physical quantity that cannot be directly sensed by 
 human body. It is, however, a most important quantity in aircraft performance.
 
 #### Density and its significance to flying.
+
+The density of atmospheric air at any given point is known as its mass per unit volume.
+Atmospheric air density is directly proportional to pressure and inversely proportional
+to absolute temperature. In the lower parts of the troposphere a 3&nbsp;°C rise in
+temperature corresponds to a 1% decrease in density, and vice versa.
+The density of standard atmosphere at sea level is 1.225&nbsp;kg/m³ or 0.002377&nbsp; slug/ft³.
+
+Atmospheric density decreases with increase in altitude, and its decrease is faster near
+the Earth than at higher altitudes. This is because, the air being compressible,
+more air mass is confined near the Earth's surface. At the altitudes of 5, 10, and
+20&nbsp;km the air density is about 60%, 35%, and 7%, respectively, of its value at sea level.
+The lines of constant density shown in a meteorological map are called isosterics.
+
+Aircraft performance, engine thrust or power output, and airspeed indicator
+readings are affected by the density of air. Aerodynamic forces are directly
+proportional to the density of the air. A given aircraft needs to fly faster to maintain a given
+altitude if the air density decreases. In fact, every aspect of aircraft
+operation --- takeoff, climb, cruise, turn, descent, and landing --- depends on the density of the
+air through which the aircraft is moving. Aircraft maneuvering limitations and
+ceiling also depend on air density. Propeller blades will produce less thrust in air
+of reduced density. Lower air density means a reduction in engine thrust,
+coincident with the need for higher takeoff and landing airspeeds, requiring a longer
+takeoff run. Alternatively, if a limited length of takeoff run is available, a lower
+density may necessitate a reduction in payload to meet the takeoff performance
+requirement.
+
+There is no instrument on the flight deck panel that directly indicates the density
+of the atmosphere through which the aircraft is flying. The density can, however,
+be calculated after obtaining the measurements of the temperature and pressure of
+the atmosphere. The hazard of low air density must be guarded against, especially
+at unfamiliar airfields, at high altitudes, on hot days. The problem is further
+accentuated if the day is also humid, because humidity reduces the density of dry air.
