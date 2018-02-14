@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Basic Laws
-categories: [menu, content, flight-physics]
+categories: [menu, content, intro, drag]
 permalink: /mypages/drag/
 ---
 

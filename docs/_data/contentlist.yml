@@ -21,6 +21,8 @@ toc:
         url: /mypages/lift/
       - page: Drag
         url: /mypages/drag/
+      - page: Aerodynamic Pitching Moment
+        url: /mypages/pitching-moment/
 
   - title: Aircraft and the Environment
     url: /mypages/aircraft-environment/
