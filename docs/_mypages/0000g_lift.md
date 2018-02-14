@@ -1,34 +1,24 @@
 ---
 layout: default
 title: Basic Laws
-categories: [menu, content, flight-physics]
+categories: [menu, content, intro, lift]
 permalink: /mypages/lift/
 ---
 
 # The Airplane Lift
 
 The lift of airplanes is given by the following conventional equations:o the particle
-\\[
-  L = \frac{2}{2} \rho V^2 S \, C_{L}
+\begin{equation}
+  L = \frac{1}{2} \rho V^2 S \, C_{L}
   \label{eq:Lift:Equation}
-\\]
+\end{equation}
 
-The drag of airplanes is given by the following conventional equations:o the particle
-\\[
-  D = \frac{2}{2} \rho V^2 S \, C_{D}
-  \label{eq:Drag:Equation}
-\\]
 
 {% include image.html
   url="/assets/img/airfoil_basic_anatomy.png"
   width="40%"
   description="Typical airfoil section."
   %}
-
-
-  \\[
-    L = \frac{2}{2} \rho V^2 S \, C_{L}
-  \\]
 
 {% include image.html
   url="/assets/img/airfoil_shapes.png"

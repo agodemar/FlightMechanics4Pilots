@@ -1,11 +1,11 @@
 ---
 layout: default
-title: The Atmosphere
-categories: [menu, content]
+title: International Standard Atmosphere
+categories: [menu, content, aircraft-environment, isa-atmosphere]
 permalink: /mypages/international-standard-atmosphere/
 ---
 
-# The International Standard Atmosphere (ISA)
+# International Standard Atmosphere (ISA)
 
 The knowledge of standard atmosphere is required for producing pressure instruments,
 performing data reductions of flight tests, and pronouncing certain safety regulations

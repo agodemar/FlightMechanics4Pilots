@@ -13,6 +13,14 @@ toc:
         url: /mypages/anatomy-conventional-aircraft/
       - page: Anatomy of Flight
         url: /mypages/anatomy-flight/
+      - page: Dynamic Aviation
+        url: /mypages/dynamic-aviation/
+      - page: External Actions on the Aircraft
+        url: /mypages/external-actions/
+      - page: Lift
+        url: /mypages/lift/
+      - page: Drag
+        url: /mypages/drag/
 
   - title: Aircraft and the Environment
     url: /mypages/aircraft-environment/
@@ -21,26 +29,30 @@ toc:
         url: /mypages/atmosphere/
       - page: International Standard Atmosphere
         url: /mypages/international-standard-atmosphere/
-      - page: Dynamic Aviation
-        url: /mypages/dynamic-aviation/
 
   - title: Flight Physics
     url: /mypages/flight-physics/
     subfolderitems:
       - page: Basic Newton Laws
         url: /mypages/basic-laws/
-      - page: Forces Acting on the Aircraft
-        url: /mypages/force-on-aircraft/
-      - page: Lift
-        url: /mypages/lift/
-      - page: Drag
-        url: /mypages/drag/
 
   - title: Aircraft Performance
     url: /mypages/performance/
     subfolderitems:
       - page: Cruising Flight
         url: /mypages/cruise/
+      - page: Climbing Flight
+        url: /mypages/climb/
+      - page: Descending Flight
+        url: /mypages/descend/
+      - page: Turning Flight
+        url: /mypages/turn/
+      - page: Pull-Up Flight
+        url: /mypages/pull-up/
+      - page: Take-Off
+        url: /mypages/take-Off/
+      - page: Landing
+        url: /mypages/landing/
 
   - title: Aircraft Stability and Control
     url: /mypages/stability-control/

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: The Atmosphere
-categories: [menu, content]
+categories: [menu, content, aircraft-environment, atmosphere]
 permalink: /mypages/atmosphere/
 ---
 # The Atmosphere
@@ -58,7 +58,7 @@ because they are related by the equation of state of the air modelled as a perfe
 
 {% include image.html
  url="/assets/img/atmosphere_temperature_pressure.jpg"
- width="60%"
+ width="85%"
  description="Typical temperature and pressure variations of atmospheric air."
  %}
 
@@ -205,3 +205,6 @@ be calculated after obtaining the measurements of the temperature and pressure o
 the atmosphere. The hazard of low air density must be guarded against, especially
 at unfamiliar airfields, at high altitudes, on hot days. The problem is further
 accentuated if the day is also humid, because humidity reduces the density of dry air.
+
+<p align="right">
+{% include search_page_put.html page_category='isa-atmosphere' put_text='Next ▶' %}</p>
