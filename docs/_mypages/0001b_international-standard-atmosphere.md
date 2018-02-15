@@ -92,7 +92,7 @@ $R = 287\,\mathrm{J}/(\mathrm{kg}\,{}^\circ\mathrm{K})$ is the air constant.
 Moreover, the local speed of sound $a$ is given by the equation
 
 \begin{equation}
-a = \big(\,\gamma \, R \, T \, \big)^{\frac{1}{2}}
+a = \sqrt{\strut \,\gamma \, R \, T \, }
 \label{eq:Air:Perfect:Gas:Sound}
 \end{equation}
 
