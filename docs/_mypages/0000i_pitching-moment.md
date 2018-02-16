@@ -136,8 +136,6 @@ where four conditions of increasing $\alpha$ are considered.
   description="The four conditions considered in the previous figure. As the $\alpha$ changes in the $C_\ell$ linearity range the airfoil $C_{m_{c/4}}$ remains invariant."
   %}
 
-
-
 {% include image.html
   url="/assets/img/Wing_Topview_Aerodynamic_Center.png"
   width="80%"
@@ -148,24 +146,6 @@ where four conditions of increasing $\alpha$ are considered.
   url="/assets/img/Wing_Cmac_Vs_alpha_curve.png"
   width="60%"
   description="Wing pitching moment coefficient with respect to aerodynamic center versus angle of attack."
-  %}
-
-{% include image.html
-  url="/assets/img/B747_fuselage_topview_2_en.png"
-  width="100%"
-  description="Boeing 747 wing-fuselage configuration. Aerodynamic center of the isolated wing and of the wing-body combination."
-  %}
-
-{% include image.html
-  url="/assets/img/B747_fuselage_sideview_1.png"
-  width="100%"
-  description="Boeing 747 fuselage side view."
-  %}
-
-{% include image.html
-  url="/assets/img/B747_fuselage_Cm_vs_alpha.png"
-  width="100%"
-  description="Boeing 747 fuselage pitching moment. The effect of the wing presence is included."
   %}
 
 {% include image.html
@@ -200,3 +180,29 @@ $$
 C_{\mathcal{M}_G} =  C_{\mathcal{M}_\mathrm{ac}} + C_{L_{\alpha}\mathrm{,W}} \big(\alpha_\mathrm{B} + i_\mathrm{W} - \alpha_{0L\mathrm{,W}}\big) \frac{a}{\bar{c}}
 \label{eq:Wing:CM:G:B}
 $$
+
+{% include image.html
+  url="/assets/img/ac_sideview_wing_Cmac_alphas.png"
+  width="100%"
+  description="When the wing aerodynamics is reduced to the wing aerodynamic center, for fixed airspeed and altitude, a varying angle of attack determines only a variation of lift $L_\mathrm{W}$ while the arm $a$ and the moment $\mathcal{M}_\mathrm{ac}$ remain unchanged."
+  %}
+
+## Effect of the fuselage
+
+{% include image.html
+  url="/assets/img/B747_fuselage_topview_2_en.png"
+  width="100%"
+  description="Boeing 747 wing-fuselage configuration. Aerodynamic center of the isolated wing and of the wing-body combination."
+  %}
+
+{% include image.html
+  url="/assets/img/B747_fuselage_sideview_1.png"
+  width="100%"
+  description="Boeing 747 fuselage side view."
+  %}
+
+{% include image.html
+  url="/assets/img/B747_fuselage_Cm_vs_alpha.png"
+  width="100%"
+  description="Boeing 747 fuselage pitching moment. The effect of the wing presence is included."
+  %}
