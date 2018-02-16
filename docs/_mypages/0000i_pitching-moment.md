@@ -10,25 +10,32 @@ permalink: /mypages/pitching-moment/
 ## Center of Pressure (CP)
 
 The aerodynamic interaction of a wing with an airflow determines a distribution of
-varying local pressures and tangential stresses on the external surface. This is also called the *wet surface* of the wing.
-The same concept applies to all remaining parts of an aircraft that are exposed to the flow, such as the external shape of the fuselage
+varying local pressures and tangential stresses on the external surface. The surface exposed to the airflow
+is also called the *wet surface* of the wing.
+The same concept applies to all remaining parts of an aircraft, such as the external shape of the fuselage
 as well as the wet surfaces of tailplanes.
 
-The local pressures and tangential stresses, provided they are multiplied by the area $\mathrm{d}\mathcal{A}$ of the elemental wet surface,
-represent a *system of applied forces*. In general, these forces are non-coplanar and non-parallel yet they can be resolved into an *equivalent single force*
-represented by the resultant, applied along a well determined axis. The aerodynamic resultant $\mathbf{F}$ is a representative force which has the same physical effect on a given
-body, in our case the aircraft, as the group of forces it replaces. In aerodynamics this conceptual process is known as *reduction* of the overall aerodynamic
-action of the airflow on the airplane *to the resultant aerodynamic force*, applied to *center of pressure*. Actually, the resultant can be applied to any given
-point of its line of action.
+The local pressures and tangential stresses, provided they are multiplied by the area $\mathrm{d}\mathcal{A}$
+of the elemental wet surface, represent a *system of applied forces*. In general, these forces are non-coplanar
+and non-parallel yet they can be resolved into an *equivalent single force* represented by the resultant,
+applied along a well determined axis. The aerodynamic resultant $\boldsymbol{F}$ is a representative force which
+has the same physical effect on a given body, in our case a wing or the entire aircraft, as the group of
+forces it replaces.
+In aerodynamics this conceptual process is known as *reduction* of the overall aerodynamic action of the
+airflow on the airplane *to the resultant aerodynamic force*, applied to *center of pressure*.
+Actually, the resultant can be applied to any given point of its line of action.
 
-When airfoils are considered, the aerodynamic resultant is a force per unit span $\mathbf{f}$, which is applied on a point
-on the chord, i.e. the center of pressure of airfoils is represented on the chord. This is illustrated by the next figure.
-The vectors $\mathbf{n}$ are the local unit vector normal to the airfoil and pressure difference vectors $(p-p_\infty)\mathbf{n}$ represent the
-local normal strain exerted on the airfoil external shape by the flow. These vectors, multiplied by the small areas $\mathrm{d}\mathcal{A} = \mathrm{d}s\cdot 1\,\mathrm{m}$
-(where $\mathrm{d}s$ is the element of curvilinear abscissa running along the airfoil and $1\,\mathrm{m}$ is the unit spanwise length) are forces
-distributed on the external surface of the airfoil. A symilar system of vector exists and is represented by the vectors
-$\tau_\mathrm{w}\mathbf{t}$, where $\tau_\mathrm{w}$ are the local viscous tangential stresses and $\mathbf{t}$ are the local unit vectors tangent
-to the airfoil. The ensemble of all these force vectors applied on the airfoil contour give rise to the the resultant $\mathbf{f}$ shown below.
+When airfoils are considered, the aerodynamic resultant is a force per unit span $\boldsymbol{f}$
+applied on a point on the chord, i.e. the center of pressure of airfoils is located on the chord.
+This is illustrated by the next figure. The vectors $\boldsymbol{n}$ are the local unit vectors normal to the
+airfoil and pressure difference vectors $(p-p_\infty)\boldsymbol{n}$ represent the local normal strains exerted
+on the airfoil external shape by the flow. These vectors, multiplied by the small areas
+$\mathrm{d}\mathcal{A} = \mathrm{d}s\cdot 1\,\mathrm{m}$ (where $\mathrm{d}s$ is the element of curvilinear
+abscissa running along the airfoil and $1\,\mathrm{m}$ is the unit spanwise length) are forces distributed on
+the external surface of the airfoil. A symilar system of vector exists and is represented by the vectors
+$\tau_\mathrm{w}\boldsymbol{t}$, where $\tau_\mathrm{w}$ are the local viscous tangential stresses and
+$\boldsymbol{t}$ are the local unit vectors tangent to the airfoil. The ensemble of all these force vectors
+applied on the airfoil contour give rise to the the resultant $\boldsymbol{f}$ shown below.
 
 {% include image.html
   url="/assets/img/Airfoil_Pressures_Reduction.png"
@@ -36,20 +43,22 @@ to the airfoil. The ensemble of all these force vectors applied on the airfoil c
   description="Reduction of pressure distribution over the airfoil external surface to the aerodynamic resultant force $f$ applied to the center of pressure (CP)."
   %}
 
-The system of all local external forces on the airfoil, due to the airflow of asymptotic speed $V_\infty$ at an angle of attack $\alpha$,
-is equivalent to the resultant $\mathbf{f}$, which is *reduced* to the center of pressure $\mathrm{CP}$. Therefore, to the point $\mathrm{CP}$
-are applied both the lift per unit span $\ell$ and the drag per unit span $d$.
+The system of all local external forces on the airfoil, due to the airflow of asymptotic speed $V_\infty$ at an angle
+of attack $\alpha$, *is equivalent* to the resultant $\boldsymbol{f}$, which is *reduced* to the center of pressure
+$\mathrm{CP}$. Therefore, to the point $\mathrm{CP}$ are applied both the lift per unit span $\ell$ and the drag per
+unit span $d$.
 
-The same is done for finite wings for which the center of pressure is taken on the root chord, i.e. the resultant $\mathbf{F}_\mathrm{W}$ acts in the plane of symmetry.
+The same is done for finite wings for which the center of pressure is taken on the root chord, i.e. the resultant
+$\boldsymbol{F}_\mathrm{W}$ acts in the plane of symmetry.
 
 {% include image.html
   url="/assets/img/Wing_Alpha_Pressure_Reduction.png"
   width="100%"
-  description="External aerodynamic actions on a wing reduced the aerodynamic resultant force $F_\mathrm{W}$ applied to the center of pressure (CP) on the root chord."
+  description="External aerodynamic actions on a wing reduced to the aerodynamic resultant force $F_\mathrm{W}$ applied to the center of pressure (CP) on the root chord."
   %}
 
-Due to the high values of aerodinamic efficiencies of airfoils and wings, often one can *neglect the drag component* in the above constructions,
-i.e. $d\approx 0$ and $L_\mathrm{W}\approx 0$.
+Due to the high values of aerodinamic efficiencies of airfoils and wings, often one can *neglect the drag component*
+in the above constructions, i.e. $d\approx 0$ and $D_\mathrm{W}\approx 0$.
 
 ## Aerodynamic Center
 
