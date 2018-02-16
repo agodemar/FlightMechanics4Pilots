@@ -130,17 +130,34 @@ where four conditions of increasing $\alpha$ are considered.
   description="Airfoil center of pressure (CP) variation with angle of attack. System reduction to the aerodynamic center at $c/4$ (approximately)."
   %}
 
+The four conditions considered in the previous figure are reported on the curves of
+$C_\ell$ and $C_{m_{c/4}}$ as functions of $\alpha$. It must be noted that the existence of a
+focal point is justifiable strictly for those angles of attack within the $C_\ell$ linearity range.
+
 {% include image.html
   url="/assets/img/Airfoil_CL_Cmc4_Vs_alpha_curve.png"
   width="90%"
   description="The four conditions considered in the previous figure. As the $\alpha$ changes in the $C_\ell$ linearity range the airfoil $C_{m_{c/4}}$ remains invariant."
   %}
 
+Finite wings are three-dimensional lifting surfaces that have the same characterisics of airfoils.
+Therefore, an aerodynamic center also exists for wings. As shown in the next top view of a wing,
+in the three-dimensional case the focal point 'a.c.' is in the symmetri plane, somewhere on the
+root chord or, according to the situation, on the projection of the mean aerodynamic chord.
+
 {% include image.html
   url="/assets/img/Wing_Topview_Aerodynamic_Center.png"
   width="80%"
   description="Wing top view showing the mean aerodynamic chord $\bar{c}$ and the wing aerodynamic center."
   %}
+
+For wings one can speak of *focal axis*, i.e. a pitch axis passing through the aerodynamic center
+and such that the pitching coefficient
+
+$$
+\mathcal{M}_\mathrm{ac} = \frac{\mathcal{M}_\mathrm{ac}}{\frac{1}{2}\rho V_\infty^2 S \, \bar{c}} = \mathrm{const}
+\label{eq:Wing:Moment:ac}
+$$
 
 {% include image.html
   url="/assets/img/Wing_Cmac_Vs_alpha_curve.png"
@@ -164,7 +181,7 @@ $$
 Pitching moment coefficient of the wing about the aircraft center of gravity:
 
 $$
-C_{\mathcal{M}_G} = \frac{\mathcal{M}_G}{\frac{1}{2}\rho V_\infty^2 S \bar{c}}
+C_{\mathcal{M}_G} = \frac{\mathcal{M}_G}{\frac{1}{2}\rho V_\infty^2 S \, \bar{c}}
 \label{eq:Wing:CM:G:A}
 $$
 
