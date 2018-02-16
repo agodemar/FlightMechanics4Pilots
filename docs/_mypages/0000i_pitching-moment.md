@@ -53,17 +53,60 @@ i.e. $d\approx 0$ and $L_\mathrm{W}\approx 0$.
 
 ## Aerodynamic Center
 
-The figure below represents an airfoil at a given angle of attack $\alpha$, developing a lift $\ell$ reduced to the center of pressure.
-It is known from the aerodynamics that, for a fixed airspeed $V_\infty$, an *increasing angle of attack* determines an increase of $\ell$
-and a movement of the point $\mathrm{CP}$ along the chord *towards the leading edge*. This forward shift takes place until $\alpha$ reaches the stall angle
-of attack $\alpha_\mathrm{stall}$ of the airfoil when, for a further increase of $\alpha$, the center of pressure
-starts shifting backwards.
+The figure below represents an airfoil at a given angle of attack $\alpha$.
+The pressure and tangential stress distributions on the airfoils are reduced, if one neglects the drag,
+to the sole lift $\ell$ applied to the center of pressure.
+It is known from the aerodynamics that, for a fixed airspeed $V_\infty$, an *increasing angle of attack*
+determines an increase of $\ell$ and a movement of the point $\mathrm{CP}$ along the chord
+*towards the leading edge*. This forward shift takes place until $\alpha$ reaches the stall angle
+of attack $\alpha_\mathrm{stall}$ of the airfoil then, for a further increase of $\alpha$, the center
+of pressure starts moving backwards.
 
 {% include image.html
   url="/assets/img/Airfoil_Pressures_Reduction_Simplified.png"
   width="70%"
   description="Approximated reduction of airfoil pressure distribution to the lift $\ell$ to the center of pressure (CP)."
   %}
+
+On the other end, for decreasing $\alpha$'s the center of pressure shifts backwards while $\ell$
+decreases. The point $\mathrm{CP}$ tends to move infinitely downstream as $\alpha$ approaches the
+angle $\alpha_{0\ell}$ and $\ell$ tends to zero.
+
+It should be noted that, being the system of external aerodynamic forces equivalent to the force
+$\ell$ applied in $\mathrm{CP}$, the moment $m_P$ per unit span of aerodynamic forces with respect to
+a given pole $P$ is equal to the moment of the reduced system with respect to $P$.
+The figure below explains this concept.
+
+{% include image.html
+  url="/assets/img/Airfoil_Pressures_Moment_Simplified.png"
+  width="70%"
+  description="Airfoil pitching moment with respect to a pole $P$."
+  %}
+
+If $x$ is the arm of $\mathrm{CP}$ to $P$ the aerodynamic moment is
+
+\begin{equation}
+m_P = - \ell \, x
+\label{eq:Airfoil:Moment:P}
+\end{equation}
+
+If the angle of attack changes both $\ell$ and $x$ will change and so will do $m_P$.
+
+The variability of the aerodynamic reduction point $\mathrm{CP}$ is an unfavourable circumstance
+when the aerodynamic behaviour of wings and tailplanes have to be evaluated to assess the pitching
+equilibrium or pitching dynamics of a complete aircraft.
+Fortunately, the experimental evidence confirms the existence of a particular *focal point* along the
+chord of airfoils that exhibits a unique property: the pitching moment of the lift with respect to
+this point is invariant with the angle of attack. This particular pole is called *aerodynamic center*
+(ac) and for slender airfoils it is located approximately at a distance of $c/4$ from the leading edge.
+
+A qualitative plot of the airfoil moment coefficient with respect to the quarter chord point
+\begin{equation}
+C_{m_{c/4}} = \frac{m_{c/4}}{\frac{1}{2}\rho V^2 c^2}
+\label{eq:Airfoil:Moment:c4}
+\end{equation}
+
+is reported in the next figure.
 
 {% include image.html
   url="/assets/img/Airfoil_Cmc4_Vs_alpha_curve.png"
@@ -106,3 +149,36 @@ starts shifting backwards.
   width="100%"
   description="Boeing 747 fuselage pitching moment. The effect of the wing presence is included."
   %}
+
+{% include image.html
+  url="/assets/img/ac_sideview_wing_mac.png"
+  width="100%"
+  description="Reduction of wing aerodynamics. Lift $L_\mathrm{W}$ applied to the wing aerodynamic center and pitching moment $\mathcal{M}_\mathrm{ac}$."
+  %}
+
+Pitching moment of the wing about the aircraft center of gravity:
+
+$$
+\mathcal{M}_G = \mathcal{M}_\mathrm{ac} + L_\mathrm{W} \, a
+\label{eq:Wing:Moment:G}
+$$
+
+Pitching moment coefficient of the wing about the aircraft center of gravity:
+
+$$
+C_{\mathcal{M}_G} = \frac{\mathcal{M}_G}{\frac{1}{2}\rho V_\infty^2 S \bar{c}}
+\label{eq:Wing:CM:G:A}
+$$
+
+knowing that
+
+$$
+L_\mathrm{W} = \frac{1}{2}\rho V_\infty^2 S \, C_{L_{\alpha}\mathrm{,W}} \big(\alpha_\mathrm{B} + i_\mathrm{W} - \alpha_{0L\mathrm{,W}}\big)
+$$
+
+we obtain
+
+$$
+C_{\mathcal{M}_G} =  C_{\mathcal{M}_\mathrm{ac}} + C_{L_{\alpha}\mathrm{,W}} \big(\alpha_\mathrm{B} + i_\mathrm{W} - \alpha_{0L\mathrm{,W}}\big) \frac{a}{\bar{c}}
+\label{eq:Wing:CM:G:B}
+$$
