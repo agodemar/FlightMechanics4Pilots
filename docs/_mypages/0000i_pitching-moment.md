@@ -65,7 +65,7 @@ in the above constructions, i.e. $d\approx 0$ and $D_\mathrm{W}\approx 0$.
 The figure below represents an airfoil at a given angle of attack $\alpha$.
 The pressure and tangential stress distributions on the airfoils are reduced, if one neglects the drag,
 to the sole lift $\ell$ applied to the center of pressure.
-It is known from the aerodynamics that, for a fixed airspeed $V_\infty$, an *increasing angle of attack*
+It is known from aerodynamics that, for a fixed airspeed $V_\infty$, an *increasing angle of attack*
 determines an increase of $\ell$ and a movement of the point $\mathrm{CP}$ along the chord
 *towards the leading edge*. This forward shift takes place until $\alpha$ reaches the stall angle
 of attack $\alpha_\mathrm{stall}$ of the airfoil then, for a further increase of $\alpha$, the center
@@ -99,7 +99,8 @@ m_P = - \ell \, x
 \label{eq:Airfoil:Moment:P}
 \end{equation}
 
-If the angle of attack changes both $\ell$ and $x$ will change and so will do $m_P$.
+For $\ell$ and $x$ positive as shown, the resulting pitch-down couple is negative by definition.
+If the angle of attack changes, both $\ell$ and $x$ will change and so will do $m_P$.
 
 The variability of the aerodynamic reduction point $\mathrm{CP}$ is an unfavourable circumstance
 when the aerodynamic behaviour of wings and tailplanes have to be evaluated to assess the pitching
@@ -126,12 +127,13 @@ is reported in the next figure.
 The non-variability of $C_{m_{c/4}}$ of airfoils with the angle of attack is well explained with the following figure,
 where four conditions of increasing $\alpha$ are considered.
 
-- In the first condition, at an angle $\alpha = \alpha_{0\ell}$, the $\mathrm{CP}$ is located ideally at a distance $x\leftarrow\infty$
-  from the pole, yet the lift $\ell = 0$. The aerodinamic pressures and tangential stresses at the profile surface have a zero resultant
-  but are not null, and their resultant pitching moment with respect to the pole is nonnull either being equal to $C_{m_0}$. In such
-  a case when the resultant is zero the aerodynamics of the airfoil in reduced to a sole *free couple*.
-- In the subsequent conditions, from 3 to 4, the resultant $\ell$ is non null but the advancing $\mathrm{CP}$ and the increasing lift
-  are such that the product $-\ell\,x$ remains equal to $C_{m_0}$.
+- In the first condition, at an angle $\alpha = \alpha_{0\ell}$, the $\mathrm{CP}$ is located ideally at a distance
+  $x\rightarrow\infty$   from the pole, yet the lift $\ell = 0$. The aerodinamic pressures and tangential stresses
+  at the profile surface have a zero resultant but are not null, and their resultant pitching moment with respect
+  to the pole is non-null either being equal to $C_{m_0}$. In such a case, when the resultant is zero, the
+  aerodynamics of the airfoil is reduced to a sole *free couple*.
+- In the subsequent conditions, from 3 to 4, the resultant $\ell$ is not null but the advancing $\mathrm{CP}$ and
+  the increasing lift are such that the product $-\ell\,x$ remains equal to $C_{m_0}$.
 
 {% include image.html
   url="/assets/img/Airfoil_Center_Pressure.png"
@@ -139,7 +141,7 @@ where four conditions of increasing $\alpha$ are considered.
   description="Airfoil center of pressure (CP) variation with angle of attack. System reduction to the aerodynamic center at $c/4$ (approximately)."
   %}
 
-The four conditions considered in the previous figure are reported on the curves of
+The four conditions considered in the previous figure are reported below on the curves of
 $C_\ell$ and $C_{m_{c/4}}$ as functions of $\alpha$. It must be noted that the existence of a
 focal point is justifiable strictly for those angles of attack within the $C_\ell$ linearity range.
 
@@ -151,7 +153,7 @@ focal point is justifiable strictly for those angles of attack within the $C_\el
 
 Finite wings are three-dimensional lifting surfaces that have the same characterisics of airfoils.
 Therefore, an aerodynamic center also exists for wings. As shown in the next top view of a wing,
-in the three-dimensional case the focal point 'a.c.' is in the symmetri plane, somewhere on the
+in the three-dimensional case the focal point 'ac' is in the symmetry plane, somewhere on the
 root chord or, according to the situation, on the projection of the mean aerodynamic chord.
 
 {% include image.html
@@ -179,11 +181,11 @@ $\alpha_{0L,\mathrm{W}} \le \alpha_\mathrm{W} \le \alpha_\mathrm{W}^\star$.
 
 The existence of the aerodynamic center of wings, i.e. a pitch focal axis, is such a favourable circumstance:
 as the angle of attack changes, the aerodynamic effect of the airflow over the lifting surface can be
-reduced to the lift $L_\mathrm{W}$ applied to the fixed point 'a.c.' *and* to a constant moment
+reduced to the lift $L_\mathrm{W}$ applied to the fixed point 'ac' *and* to a constant moment
 $\mathcal{M}_\mathrm{ac}$ about the same pole.
 
 A very important practical outcome of this circumstance is illustrated by the next figure.
-When one evaluates the baricentric pitching moment due to the aerodynamics of the wing it is simply
+When one evaluates the baricentric pitching moment due to the aerodynamics of the wing, it is simply
 calculated by multiplying $L_\mathrm{W}$ times the arm $a$ and then adding the couple
 $\mathcal{M}_\mathrm{ac,W}$.
 
@@ -193,7 +195,7 @@ $\mathcal{M}_\mathrm{ac,W}$.
   description="Reduction of wing aerodynamics. Lift $L_\mathrm{W}$ applied to the wing aerodynamic center and pitching moment $\mathcal{M}_\mathrm{ac,W}$."
   %}
 
-Therefore, the pitching moment of the wing about the aircraft center of gravity is:
+Therefore, the pitching moment of the wing about the aircraft center of gravity $G$ is:
 
 $$
 \mathcal{M}_{G,\mathrm{W}} = \mathcal{M}_\mathrm{ac,W} + L_\mathrm{W} \, a
@@ -239,8 +241,8 @@ C_{\mathcal{M}_{\alpha}\mathrm{,W}} = C_{L_{\alpha}\mathrm{,W}} \; \frac{a}{\bar
 \label{eq:Wing:CM:G:E}
 $$
 
-The above two constants are known by the designers once the geometry of the wing and the center of gravity
-position are known.
+The above two constants are known by the designers, for a given flight condition, once the geometry of the wing
+and the center of gravity position are known.
 
 The above discussed concepts are complemented by the figure below.
 
