@@ -114,11 +114,29 @@ is reported in the next figure.
   description="Airfoil pitching moment coefficient with respect to a pole at the quarter-chord versus angle of attack."
   %}
 
+The non-variability of $C_{m_{c/4}}$ of airfoils with the angle of attack is well explained with the following figure,
+where four conditions of increasing $\alpha$ are considered.
+
+- In the first condition, at an angle $\alpha = \alpha_{0\ell}$, the $\mathrm{CP}$ is located ideally at a distance $x\leftarrow\infty$
+  from the pole, yet the lift $\ell = 0$. The aerodinamic pressures and tangential stresses at the profile surface have a zero resultant
+  but are not null, and their resultant pitching moment with respect to the pole is nonnull either being equal to $C_{m_0}$. In such
+  a case when the resultant is zero the aerodynamics of the airfoil in reduced to a sole *free couple*.
+- In the subsequent conditions, from 3 to 4, the resultant $\ell$ is non null but the advancing $\mathrm{CP}$ and the increasing lift
+  are such that the product $-\ell\,x$ remains equal to $C_{m_0}$.
+
 {% include image.html
   url="/assets/img/Airfoil_Center_Pressure.png"
   width="90%"
   description="Airfoil center of pressure (CP) variation with angle of attack. System reduction to the aerodynamic center at $c/4$ (approximately)."
   %}
+
+{% include image.html
+  url="/assets/img/Airfoil_CL_Cmc4_Vs_alpha_curve.png"
+  width="90%"
+  description="The four conditions considered in the previous figure. As the $\alpha$ changes in the $C_\ell$ linearity range the airfoil $C_{m_{c/4}}$ remains invariant."
+  %}
+
+
 
 {% include image.html
   url="/assets/img/Wing_Topview_Aerodynamic_Center.png"
