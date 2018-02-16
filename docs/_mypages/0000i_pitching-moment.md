@@ -155,9 +155,12 @@ For wings one can speak of *focal axis*, i.e. a pitch axis passing through the a
 and such that the pitching coefficient
 
 $$
-\mathcal{M}_\mathrm{ac} = \frac{\mathcal{M}_\mathrm{ac}}{\frac{1}{2}\rho V_\infty^2 S \, \bar{c}} = \mathrm{const}
+C_{\mathcal{M}_\mathrm{ac}} = \frac{\mathcal{M}_\mathrm{ac}}{\frac{1}{2}\rho V_\infty^2 S \, \bar{c}} = \mathrm{const}
 \label{eq:Wing:Moment:ac}
 $$
+
+This is confirmed by the next plot for all angles of attack
+$\alpha_{0L,\mathrm{W}} \le \alpha_\mathrm{W} \le \alpha_\mathrm{W}^\star$.
 
 {% include image.html
   url="/assets/img/Wing_Cmac_Vs_alpha_curve.png"
@@ -165,43 +168,77 @@ $$
   description="Wing pitching moment coefficient with respect to aerodynamic center versus angle of attack."
   %}
 
+The existence of the aerodynamic center of wings, i.e. a pitch focal axis, is such a favourable circumstance:
+as the angle of attack changes, the aerodynamic effect of the airflow over the lifting surface can be
+reduced to the lift $L_\mathrm{W}$ applied to the fixed point 'a.c.' *and* to a constant moment
+$\mathcal{M}_\mathrm{ac}$ about the same pole.
+
+A very important practical outcome of this circumstance is illustrated by the next figure.
+When one evaluates the baricentric pitching moment due to the aerodynamics of the wing it is simply
+calculated by multiplying $L_\mathrm{W}$ times the arm $a$ and then adding the couple
+$\mathcal{M}_\mathrm{ac,W}$.
+
 {% include image.html
   url="/assets/img/ac_sideview_wing_mac.png"
   width="100%"
-  description="Reduction of wing aerodynamics. Lift $L_\mathrm{W}$ applied to the wing aerodynamic center and pitching moment $\mathcal{M}_\mathrm{ac}$."
+  description="Reduction of wing aerodynamics. Lift $L_\mathrm{W}$ applied to the wing aerodynamic center and pitching moment $\mathcal{M}_\mathrm{ac,W}$."
   %}
 
-Pitching moment of the wing about the aircraft center of gravity:
+Therefore, the pitching moment of the wing about the aircraft center of gravity is:
 
 $$
-\mathcal{M}_G = \mathcal{M}_\mathrm{ac} + L_\mathrm{W} \, a
+\mathcal{M}_{G,\mathrm{W}} = \mathcal{M}_\mathrm{ac,W} + L_\mathrm{W} \, a
 \label{eq:Wing:Moment:G}
 $$
 
-Pitching moment coefficient of the wing about the aircraft center of gravity:
+The corresponding pitching moment coefficient
 
 $$
-C_{\mathcal{M}_G} = \frac{\mathcal{M}_G}{\frac{1}{2}\rho V_\infty^2 S \, \bar{c}}
+C_{\mathcal{M}_G,\mathrm{W}} = \frac{\mathcal{M}_{G,\mathrm{W}}}{\frac{1}{2}\rho V_\infty^2 S \, \bar{c}}
 \label{eq:Wing:CM:G:A}
 $$
 
-knowing that
+can be calculated considering that
 
 $$
 L_\mathrm{W} = \frac{1}{2}\rho V_\infty^2 S \, C_{L_{\alpha}\mathrm{,W}} \big(\alpha_\mathrm{B} + i_\mathrm{W} - \alpha_{0L\mathrm{,W}}\big)
 $$
 
-we obtain
+and substituting into the expression (\ref{eq:Wing:Moment:G}), to obtain the equation:
 
 $$
-C_{\mathcal{M}_G} =  C_{\mathcal{M}_\mathrm{ac}} + C_{L_{\alpha}\mathrm{,W}} \big(\alpha_\mathrm{B} + i_\mathrm{W} - \alpha_{0L\mathrm{,W}}\big) \frac{a}{\bar{c}}
+C_{\mathcal{M}_G,\mathrm{W}} =  C_{\mathcal{M}_\mathrm{ac},\mathrm{W}} + C_{L_{\alpha}\mathrm{,W}} \big(\alpha_\mathrm{B} + i_\mathrm{W} - \alpha_{0L\mathrm{,W}}\big) \frac{a}{\bar{c}}
 \label{eq:Wing:CM:G:B}
 $$
+
+The above expression can be rearranged as the following linear formula in $\alpha_\mathrm{B}$:
+
+$$
+C_{\mathcal{M}_G,\mathrm{W}} =  C_{\mathcal{M}_0,\mathrm{W}} + C_{\mathcal{M}_{\alpha}\mathrm{,W}} \; \alpha_\mathrm{B}
+\label{eq:Wing:CM:G:C}
+$$
+
+where the two constants are defined as:
+
+$$
+C_{\mathcal{M}_0,\mathrm{W}} = C_{\mathcal{M}_\mathrm{ac},\mathrm{W}} + C_{L_{\alpha}\mathrm{,W}} \big( i_\mathrm{W} - \alpha_{0L\mathrm{,W}} \big) \frac{a}{\bar{c}}
+\label{eq:Wing:CM:G:D}
+$$
+
+$$
+C_{\mathcal{M}_{\alpha}\mathrm{,W}} = C_{L_{\alpha}\mathrm{,W}} \; \frac{a}{\bar{c}}
+\label{eq:Wing:CM:G:E}
+$$
+
+The above two constants are known by the designers once the geometry of the wing and the center of gravity
+position are known.
+
+The above discussed concepts are complemented by the figure below.
 
 {% include image.html
   url="/assets/img/ac_sideview_wing_Cmac_alphas.png"
   width="100%"
-  description="When the wing aerodynamics is reduced to the wing aerodynamic center, for fixed airspeed and altitude, a varying angle of attack determines only a variation of lift $L_\mathrm{W}$ while the arm $a$ and the moment $\mathcal{M}_\mathrm{ac}$ remain unchanged."
+  description="When the wing aerodynamics is reduced to the wing aerodynamic center, for fixed airspeed and altitude, a varying angle of attack determines only a variation of lift $L_\mathrm{W}$ while the arm $a$ and the moment $\mathcal{M}_\mathrm{ac,W}$ remain unchanged."
   %}
 
 ## Effect of the fuselage
