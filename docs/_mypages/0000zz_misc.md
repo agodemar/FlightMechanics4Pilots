@@ -1,11 +1,13 @@
 ---
 layout: default
-title: Dynamic Aviation
-categories: [menu, content]
-permalink: /mypages/dynamic-aviation/
+title: Pitching Moment
+categories: [menu, content, intro, miscellanea]
+permalink: /mypages/intro-miscellanea/
 ---
 
-# Dynamic aviation
+# Miscellanea
+
+## Dynamic aviation
 
 Every aeronautical vehicle or device producing a lift or thrust force accelerates
 an amount of surrounding air in a downward and/or backward direction
@@ -22,8 +24,6 @@ If this is greater or smaller than the weight or inclined sideways, the directio
 motion can be changed, making the aircraft manoeuvrable. Therefore, dynamic
 aviation encompasses the essential condition that there must be a
 continuous, downward flow of air around the aircraft.
-
-# Temporary stuff
 
 {% include image.html
   url="/assets/img/moto_long-simmetrico_accelerazioni.png"

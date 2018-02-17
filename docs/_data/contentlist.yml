@@ -13,8 +13,8 @@ toc:
         url: /mypages/anatomy-conventional-aircraft/
       - page: Anatomy of Flight
         url: /mypages/anatomy-flight/
-      - page: Dynamic Aviation
-        url: /mypages/dynamic-aviation/
+      - page: Airspeeds
+        url: /mypages/airspeeds/
       - page: External Actions on the Aircraft
         url: /mypages/external-actions/
       - page: Lift
@@ -23,6 +23,8 @@ toc:
         url: /mypages/drag/
       - page: Aerodynamic Pitching Moment
         url: /mypages/pitching-moment/
+      - page: Miscellanea
+        url: /mypages/intro-miscellanea/
 
   - title: Aircraft and the Environment
     url: /mypages/aircraft-environment/
