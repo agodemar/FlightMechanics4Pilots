@@ -185,17 +185,19 @@ reduced to the lift $L_\mathrm{W}$ applied to the fixed point 'ac' *and* to a co
 $\mathcal{M}_\mathrm{ac}$ about the same pole.
 
 A very important practical outcome of this circumstance is illustrated by the next figure.
-When one evaluates the baricentric pitching moment due to the aerodynamics of the wing, it is simply
-calculated by multiplying $L_\mathrm{W}$ times the arm $a$ and then adding the couple
+When one needs to evaluate the aircraft baricentric pitching moment due to the aerodynamics
+of the wing, it can be simply calculated by multiplying $L_\mathrm{W}$ times the arm $a$ and then adding the couple
 $\mathcal{M}_\mathrm{ac,W}$.
 
 {% include image.html
-  url="/assets/img/ac_sideview_wing_mac.png"
+  url="/assets/img/ac_sideview_wing_mac_simplified.png"
   width="100%"
   description="Reduction of wing aerodynamics. Lift $L_\mathrm{W}$ applied to the wing aerodynamic center and pitching moment $\mathcal{M}_\mathrm{ac,W}$."
   %}
 
-Therefore, the pitching moment of the wing about the aircraft center of gravity $G$ is:
+Therefore, the pitching moment
+$$\mathcal{M}_{G,\mathrm{W}}$$
+of the wing about the aircraft center of gravity $G$ is:
 
 $$
 \mathcal{M}_{G,\mathrm{W}} = \mathcal{M}_\mathrm{ac,W} + L_\mathrm{W} \, a
@@ -244,21 +246,15 @@ $$
 The above two constants are known by the designers, for a given flight condition, once the geometry of the wing
 and the center of gravity position are known.
 
-The above discussed concepts are complemented by the figure below.
-
-{% include image.html
-  url="/assets/img/ac_sideview_wing_Cmac_alphas.png"
-  width="100%"
-  description="When the wing aerodynamics is reduced to the wing aerodynamic center, for fixed airspeed and altitude, a varying angle of attack determines only a variation of lift $L_\mathrm{W}$ while the arm $a$ and the moment $\mathcal{M}_\mathrm{ac,W}$ remain unchanged."
-  %}
-
 ## Effect of the fuselage
 
-{% include image.html
-  url="/assets/img/B747_fuselage_topview_2_en.png"
-  width="100%"
-  description="Boeing 747 wing-fuselage configuration. Aerodynamic center of the isolated wing and of the wing-body combination."
-  %}
+When a wing-fuselage configuration is considered, also called *wing-body* by engineers, the concept of
+aerodynamic center (or focal pitch axis) remains.
+Fuselages of conventional airplanes develop almost no lift but are subject to a pitching moment due to
+airflow. By adding the fuselage to the wing it can be shown that their combination still exhibits an aerodynamic
+center.
+
+The figure below shows a side view of an airliner.
 
 {% include image.html
   url="/assets/img/B747_fuselage_sideview_1.png"
@@ -266,8 +262,45 @@ The above discussed concepts are complemented by the figure below.
   description="Boeing 747 fuselage side view."
   %}
 
+This particular shape, when immersed in an air stream at an angle of attack $\alpha_\mathrm{B}$, generates
+a pitching moment $\mathcal{M}_{\mathrm{B}}$.
+A typycal behaviour of this kind of stretched, cylinder-like shapes is shown in the next plot
+representing the pitching moment coefficient of the fuselage
+
+$$
+C_{\mathcal{M},\mathrm{B}} = \frac{\mathcal{M}_{\mathrm{B}}}{\frac{1}{2}\rho V_\infty^2 S \, \bar{c}}
+\label{eq:Body:CM}
+$$
+
+as a function of the angle of attack.
+
 {% include image.html
   url="/assets/img/B747_fuselage_Cm_vs_alpha.png"
-  width="100%"
+  width="70%"
   description="Boeing 747 fuselage pitching moment. The effect of the wing presence is included."
   %}
+
+The positive slope of the above linear dependency from $\alpha_\mathrm{B}$
+is un unfavourable circumstance for the longitudinal stability of airplanes.
+<p>
+The aircraft longitudinal stability is discussed in more detail
+{% include search_page_put.html
+  page_category='longitudinal-stability'
+  put_text='in the section on pitch stability and control' %}.
+</p>
+
+The important practical outcome of the above discussion is illustrated by the next figure.
+When one considers the wing-fuselage (WB) combination, typycally *the aerodynamic center shifts forwards*
+with respect to the original position determined for the isolated wing (W). Therefore, in the top view
+reported below the wing-body aerodynamic center is located at the distance
+$x_{\mathrm{ac,WB}}$ from the leading edge of the wing aerodynamic chord $\bar{c}$, which is
+less than the distance $x_{\mathrm{ac,W}}$ of the focal axis of the isolated wing.
+
+{% include image.html
+  url="/assets/img/B747_fuselage_topview_2_en.png"
+  width="100%"
+  description="Boeing 747 wing-fuselage configuration. Aerodynamic center of the isolated wing and of the wing-body ombination."
+  %}
+
+In other terms, *the presence of the fuselage does not add a significant lifting capacity to the wing
+but moves the aerodynamic center towards the nose*.
