@@ -108,3 +108,7 @@ $$
 
 The equivalent airspeed *is the airspeed at sea level in the International Standard Atmosphere at which the dynamic
 pressure is the same as the dynamic pressure at the true airspeed (TAS) and altitude at which the aircraft is flying*.
+
+Equivalent airspeed (EAS) is the calibrated airspeed (CAS) corrected for the compressibility of air at a non-trivial
+Mach number.
+In low-speed flight, EAS is the speed which would be shown by an airspeed indicator with zero error.[3] It is useful for predicting aircraft handling, aerodynamic loads, stalling etc.
