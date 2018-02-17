@@ -65,8 +65,8 @@ V_\mathrm{TAS} = \left\{ \frac{2\,\gamma}{\gamma - 1} \frac{p}{\rho} \left[ \lef
 $$
 
 {% include image.html
-  url="/assets/img/True_airspeed_indicator-FAA.svg"
-  width="70%"
+  url="/assets/img/True_airspeed_indicator-FAA.png"
+  width="60%"
   description="A mechanical true airspeed indicator for an airplane. The pilot sets the pressure altitude and air temperature in the top window using the knob; the needle indicates true airspeed in the lower left window."
   %}
 
