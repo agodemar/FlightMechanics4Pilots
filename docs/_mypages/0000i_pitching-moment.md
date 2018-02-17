@@ -264,7 +264,7 @@ The figure below shows a side view of an airliner.
 
 This particular shape, when immersed in an air stream at an angle of attack $\alpha_\mathrm{B}$, generates
 a pitching moment $\mathcal{M}_{\mathrm{B}}$.
-A typycal behaviour of this kind of stretched, cylinder-like shapes is shown in the next plot
+A typical behaviour of this kind of stretched, cylinder-like shapes is shown in the next plot
 representing the pitching moment coefficient of the fuselage
 
 $$
@@ -290,7 +290,7 @@ The aircraft longitudinal stability is discussed in more detail
 </p>
 
 The important practical outcome of the above discussion is illustrated by the next figure.
-When one considers the wing-fuselage (WB) combination, typycally *the aerodynamic center shifts forwards*
+When one considers the wing-fuselage (WB) combination, typically *the aerodynamic center shifts forwards*
 with respect to the original position determined for the isolated wing (W). Therefore, in the top view
 reported below the wing-body aerodynamic center is located at the distance
 $x_{\mathrm{ac,WB}}$ from the leading edge of the wing aerodynamic chord $\bar{c}$, which is

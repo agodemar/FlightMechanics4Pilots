@@ -266,7 +266,7 @@ The elevator deflection angle $\delta_\mathrm{e}$ is shown in the next tailplane
   description="Horizontal tailplane section."
   %}
 
-Typycally, elevators have smaller movable *tabs*, called *trim tabs*, whose rotation $\delta_\mathrm{t}$ provides additional finer control of longitudinal equilibrium flight and of piloting loads.
+Typically, elevators have smaller movable *tabs*, called *trim tabs*, whose rotation $\delta_\mathrm{t}$ provides additional finer control of longitudinal equilibrium flight and of piloting loads.
 
 {% include image.html
   url="/assets/img/horizontal_tail_profile_deltaE.png"
