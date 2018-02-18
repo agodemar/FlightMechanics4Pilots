@@ -13,8 +13,6 @@ toc:
         url: /mypages/anatomy-conventional-aircraft/
       - page: Anatomy of Flight
         url: /mypages/anatomy-flight/
-      - page: Airspeeds
-        url: /mypages/airspeeds/
       - page: External Actions on the Aircraft
         url: /mypages/external-actions/
       - page: Lift
@@ -33,6 +31,8 @@ toc:
         url: /mypages/atmosphere/
       - page: International Standard Atmosphere
         url: /mypages/international-standard-atmosphere/
+      - page: Airspeeds
+        url: /mypages/airspeeds/
 
   - title: Flight Physics
     url: /mypages/flight-physics/

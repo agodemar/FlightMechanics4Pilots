@@ -155,21 +155,21 @@ $\delta = 0.533$, yields a pressure-altitude of $5000\,\mathrm{m}$.
 In the troposphere, where the temperature law is
 
 \begin{equation}
-T(h) = T_\mathrm{SL} - \lambda_\mathrm{tropo} \, h
+T(h) = T_\mathrm{SL} - \lambda_0 \, h
 \label{eq:ISA:Temperature:Troposphere}
 \end{equation}
 
-with $\lambda_\mathrm{tropo} = 0.0065\,{}^\circ\mathrm{C/m}$, given the SL values
+with $\lambda_0 = 0.0065\,{}^\circ\mathrm{C/m}$, given the SL values
 reported above, it is easy to show that
 
 \begin{equation}
-\delta (h) = \left( \frac{T(h)}{T_\mathrm{SL}} \right)^{\frac{g_0}{\lambda R}}
+\delta (h) = \left( \frac{T(h)}{T_\mathrm{SL}} \right)^{\frac{g_0}{\lambda_0 R}}
   = \left( \frac{T(h)}{T_\mathrm{SL}} \right)^{5.256}
 \label{eq:ISA:Ratios:Troposphere:Delta}
 \end{equation}
 
 \begin{equation}
-\sigma (h) = \left( \frac{T(h)}{T_\mathrm{SL}} \right)^{\frac{g_0}{\lambda R} - 1}
+\sigma (h) = \left( \frac{T(h)}{T_\mathrm{SL}} \right)^{\frac{g_0}{\lambda_0 R} - 1}
   = \left( \frac{T(h)}{T_\mathrm{SL}} \right)^{4.256}
 \label{eq:ISA:Ratios:Troposphere:Sigma}
 \end{equation}

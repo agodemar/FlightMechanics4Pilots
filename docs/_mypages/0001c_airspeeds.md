@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Airspeeds
-categories: [menu, content]
+categories: [menu, content, aircraft-environment, airspeeds]
 permalink: /mypages/airspeeds/
 ---
 
@@ -31,6 +31,7 @@ $$
 $$
 
 is present only when an aircraft is in motion; therefore, it can be thought of as a pressure due to motion.
+The above definition of dynamic pressure remains the same for flows of all types, incompressible to hypersonic.
 
 A scheme of a Pitot-satic system mounted on an aircraft is shown in the figure below.
 
@@ -77,6 +78,60 @@ but the quantitative formulation differs depending on whether the flow is low sp
 high-speed subsonic, or supersonic.
 
 ### Incompressible subsonic formulation
+
+At point D, i.e. at one of the static holes of the Pitot tube, the pressure is $p$ and
+the velocity is $V$ (supervelocities due to the shape of the external shape of the tube are neglectable).
+At point A, the pressure is $p_0$ and the velocity is zero. Applying Bernoulli's equation at points A and D,
+we obtain
+
+$$
+p_0 = p + \frac{1}{2}\rho \, V^2
+\label{eq:Airpeeds:Bernoulli}
+$$
+
+that is, the difference in static pressure between the points A and D is the dynamic pressure at
+point D. The last relation *holds for incompressible flows only*. The total pressure equals the
+sum of the static and the dynamic pressure. This yields the desired relation between $V$ and the
+difference $p_0 - p$:
+
+$$
+\color{red}{ V = \sqrt{ \mathstrut 2\, \frac{p_0 - p}{\rho}} }
+\label{eq:Airpeeds:V:Incompressible}
+$$
+
+In the incompressible regime where the density $\rho$ is a known constant value, the above formula
+allows the calculation of flow velocity from a measurement of $p_0 - p$, obtained from a Pitot-static tube.
+The constant density $\rho$ value can be obtained by measuring $p$ and $T$ and applying the
+equation of state to calculate $\rho = p/(R\,T)$.
+
+{% include image.html
+  url="/assets/img/pitot-underwing.jpg"
+  width="60%"
+  description="Pitot tube mounted on a wing."
+  %}
+
+{% include image.html
+  url="/assets/img/pitot-tubes-airliner.jpg"
+  width="90%"
+  description="Pitot probes on the fuselage nose of an airliner."
+  %}
+
+Either Pitot tubes or a Pitot-static tubes are used to measure the airspeed
+of airplanes. Such tubes can be seen extending from airplane wing tips, with
+the tube oriented in the flight direction, or from nose of fuselages.
+
+If a Pitot tube by itself is used instead of a Pitot-static tube, then the ambient
+static pressure in the atmosphere around the airplane is obtained from a static pressure
+orifice placed strategically on the airplane surface. It is placed where the surface
+pressure is nearly the same as the pressure of the surrounding atmosphere. Such a
+location is found by experience. It is generally on the fuselage somewhere between
+the nose and the wing.
+
+{% include image.html
+  url="/assets/img/pitot-f16.jpg"
+  width="90%"
+  description="Pitot probe on a military combat aircraft."
+  %}
 
 ### Compressible subsonic formulation
 
