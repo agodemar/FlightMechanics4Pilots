@@ -23,7 +23,7 @@ Tel.: +39 0817683323
 
 Email: agostino **dot** demarco **at** unina **dot** it
 
-Web 0: [www.docenti.unina.it/agostino.de_marco](http://www.docenti.unina.it/agostino.de_marco)
+Web 0: [www.docenti.unina.it - agostino.de_marco](https://www.docenti.unina.it/#!/professor/41474f5354494e4f4445204d4152434f444d5247544e36394d33314739363452/riferimenti)
 
 Web 1: [www.dii.unina.it](http://www.dii.unina.it)
 

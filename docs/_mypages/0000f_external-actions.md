@@ -82,5 +82,5 @@ permalink: /mypages/external-actions/
 {% include image.html
   url="/assets/img/ac_ground_track_HUD.png"
   width="100%"
-  description="Velocity vector $\mathbf{V}$, ground track, airplane attitude angles $\phi$ and $\theta$ ($\psi=0$)."
+  description="Velocity vector $\boldsymbol{V}$, ground track, airplane attitude angles $\phi$ and $\theta$ ($\psi=0$)."
   %}

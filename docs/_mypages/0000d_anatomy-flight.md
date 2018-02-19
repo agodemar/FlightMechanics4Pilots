@@ -5,7 +5,15 @@ categories: [menu, content, introduction, anatomy-flight]
 permalink: /mypages/anatomy-flight/
 ---
 
-# Basic ''Anatomy'' of Airplane Flight
+# Anatomy of Airplane Flight
+
+In this section we recall the essential definitions that are useful for the study of airplane flight mechanics.
+
+The first figure introduces the two aerodynamic angles that generate the aerodynamic forces and moments acting on the
+airplane. These angles are the aircraft *sideslip angle* $\beta$ and the aircraft (absolute) angle of attack $\alpha$.
+The sideslip $\beta$ is the angle formed by the instantaneous CoG velocity vector $\boldsymbol{V}$ and its projection
+onto the airplane's symmetry plane. The projection is the *aerodynamic axis* called $x_\mathrm{A}$, a baricentric axis,
+and shown in the figure.
 
 {% include image.html
   url="/assets/img/ac_aerodynamic_angles.png"
@@ -13,11 +21,37 @@ permalink: /mypages/anatomy-flight/
   description="Aircraft aerodynamic angles in a generic non-symmetric flight."
   %}
 
+If the pilot sees a relative wing velocity $-\boldsymbol{V}$ coming from the right then the sideslip $\beta$ is
+positive by definition. If the relative wind is in the plane of symmetry, i.e. $\beta = 0$, the flight is an
+*aerodynamically symmetric flight* and the direction of $\boldsymbol{V}$ coincides with the direction of $x_\mathrm{A}$.
+
+The angle between axes $x_\mathrm{A}$ and $x_\mathrm{B}$ is the aircraft body-angle of attack $\alpha_\mathrm{B}$.
+The angle $\alpha = \alpha_\mathrm{B} + \mu_x$ between $x_\mathrm{A}$ and the zero-lift line of the wing is the
+*absolute angle of attack* $\alpha$. This angle is shown in the above figure.
+
+The aerodynamic axis $z_\mathrm{A}$ is taken, by construction, in the aircraft symmetry plane and positively oriented
+as shown. The remaining aerodynamic axis $y_\mathrm{A}$ completes the frame and coincides with the bidy axis $y_\mathrm{B}$.
+
+Next figure represents the simple case of an airplane in symmetric, wings level flight, with the CoG moving along a straight and horizontal
+trajectory. By definition, the lift $L$ is the component of the resultant aerodynamic force
+$$\boldsymbol{F}_\mathrm{A}$$ on the aircraft resolved on the axis $z_\mathrm{A}$. The drag $D$ is the component of the resultant along the axis $x_\mathrm{A}$.
+In symmetric flight these are the only two components of $\boldsymbol{F}_\mathrm{A}$ and they are shown in the figure.
+
+The flight condition considered below is such that the plane $x_\mathrm{A} y_\mathrm{A}$ is horizontal, i.e. is normal to
+the local vertical direction given by the weight vector $\boldsymbol{W} = m \boldsymbol{g}$ passing through the CoG (point $G$).
+
+The attitude of the fuselage is such that the body axis $x_\mathrm{B}$ forms an angle $\theta$ with respect to the
+horizontal plane. This angle is called *elevation angle* (sometimes erroneously also called 'pitch angle').
+The above flight condition presents a horizontal velocity vector $\boldsymbol{V}$, i.e. a horizontal CoG trajectory, but an
+inclined fuselage. This means that the angle $\theta$ coincides with the aerodynamic angle $\alpha_\mathrm{B}$.
+
 {% include image.html
   url="/assets/img/ac_longitudinal_symmetric_four_forces.png"
   width="80%"
   description="Aircraft in wings level, horizontal flight. The typical ''Four Forces'' of symmetric flight are also shown."
   %}
+
+A slightly different flight condition is represented below.
 
 {% include image.html
   url="/assets/img/ac_longitudinal_symmetric.png"
