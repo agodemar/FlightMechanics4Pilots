@@ -74,7 +74,7 @@ of pressure starts moving backwards.
 {% include image.html
   url="/assets/img/Airfoil_Pressures_Reduction_Simplified.png"
   width="70%"
-  description="Approximated reduction of airfoil pressure distribution to the lift $\ell$ to the center of pressure (CP)."
+  description="Approximated reduction of airfoil pressure distribution to the lift $\ell$ applied to the center of pressure (CP)."
   %}
 
 On the other end, for decreasing $\alpha$'s the center of pressure shifts backwards while $\ell$
@@ -124,7 +124,7 @@ is reported in the next figure.
   description="Airfoil pitching moment coefficient with respect to a pole at the quarter-chord versus angle of attack."
   %}
 
-The non-variability of $C_{m_{c/4}}$ of airfoils with the angle of attack is well explained with the following figure,
+The non-variability of $C_{m_{c/4}}$ of airfoils with the angle of attack is well explained by the following figure,
 where four conditions of increasing $\alpha$ are considered.
 
 - In the first condition, at an angle $\alpha = \alpha_{0\ell}$, the $\mathrm{CP}$ is located ideally at a distance
@@ -227,19 +227,19 @@ $$
 The above expression can be rearranged as the following linear formula in $\alpha_\mathrm{B}$:
 
 $$
-C_{\mathcal{M}_G,\mathrm{W}} =  C_{\mathcal{M}_0,\mathrm{W}} + C_{\mathcal{M}_{\alpha}\mathrm{,W}} \; \alpha_\mathrm{B}
+C_{\mathcal{M}_G,\mathrm{W}} =  {\color{green}{ C_{\mathcal{M}_0,\mathrm{W}} }} + {\color{green}{ C_{\mathcal{M}_{\alpha}\mathrm{,W}} }}\; {\color{blue}{ \alpha_\mathrm{B} }}
 \label{eq:Wing:CM:G:C}
 $$
 
 where the two constants are defined as:
 
 $$
-C_{\mathcal{M}_0,\mathrm{W}} = C_{\mathcal{M}_\mathrm{ac},\mathrm{W}} + C_{L_{\alpha}\mathrm{,W}} \big( i_\mathrm{W} - \alpha_{0L\mathrm{,W}} \big) \frac{a}{\bar{c}}
+{\color{green}{ C_{\mathcal{M}_0,\mathrm{W}} }} = C_{\mathcal{M}_\mathrm{ac},\mathrm{W}} + C_{L_{\alpha}\mathrm{,W}} \big( i_\mathrm{W} - \alpha_{0L\mathrm{,W}} \big) \frac{a}{\bar{c}}
 \label{eq:Wing:CM:G:D}
 $$
 
 $$
-C_{\mathcal{M}_{\alpha}\mathrm{,W}} = C_{L_{\alpha}\mathrm{,W}} \; \frac{a}{\bar{c}}
+{\color{green}{ C_{\mathcal{M}_{\alpha}\mathrm{,W}} }}= C_{L_{\alpha}\mathrm{,W}} \; \frac{a}{\bar{c}}
 \label{eq:Wing:CM:G:E}
 $$
 
