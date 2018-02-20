@@ -137,13 +137,35 @@ hence the thrust can provide a nonzero pitching moment about the point $G$.
 
 The figure below summarizes the concepts discussed so far. An aircraft flying with wings level in
 symmetric conditions, i.e. with zero sideslip, always keeps his symmetry plane vertical.
-Hence the weight vector, as well as lift, drag and thrust are always in the plane of symmetry.
+Hence the four fundamental forces involved in symmetric flight, i.e. lift, drag, thrust and the weight vector, are always
+in the same vertical plane.
 In this circumstance a non accelerated flight ($V = \mathrm{const}$) along a rectilinear CoG trajectory occurs at an
-angle of climb $\gamma$ with the fuselage at an attitude angle $\theta$. In particular, such a
-flight might occurr along an horizontal trajectory, i.e. $\gamma = 0$.
+angle of climb $\gamma$ with the fuselage at an attitude angle $\theta = \gamma + \alpha_\mathrm{B}$. In particular, such a
+flight might occurr along an horizontal trajectory, in which case $\gamma = 0$ and $\theta = \alpha_\mathrm{B}$.
 
 {% include image.html
   url="/assets/img/ac_sideview_climb_1.png"
   width="90%"
   description="Aircraft in wings level, climbing flight."
   %}
+
+When the thrust line is non-baricentric, the equilibrium in pitch during flight is reached when the moment $\mathcal{M}_T$
+around the CoG provided by the thrust vector is equal and opposite to the resultant baricentric aerodynamic moment $\mathcal{M} _ \mathrm{A}$.
+
+The next scheme of forces is the result of the common two assumptions in the study of aircraft performance:
+
+- The angles involved are small, i.e. $\alpha_\mathrm{B}$, $\mu_T$, $\gamma$, and $\theta$. Whitin this assumption, in studies related to climb
+  or descending flight the angle $\gamma$ is important therefore is retained in thos formulations, in which cases the equality
+  $\gamma = \theta$ holds.
+- The thrust line is baricentric. For the assumption of small $\alpha_\mathrm{B}$, results in a thrust aligned with the CoG velocity
+  $\boldsymbol{V}$.
+
+{% include image.html
+  url="/assets/img/ac_sideview_horizontal_simplified.png"
+  width="90%"
+  description="Aircraft in wings level, climbing flight. Assuming small angles and a baricentric thrust line."
+  %}
+
+The above scheme of forces becomes even simpler for a wings level, symmetric flight along a horizontal trajectory,
+i.e. $\gamma = 0$. In this case thrust and drag forces are opposed and horizontal; weight and lift forces are aligned,
+opposed and vertical.

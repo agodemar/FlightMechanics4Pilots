@@ -39,6 +39,8 @@ toc:
     subfolderitems:
       - page: Basic Newton Laws
         url: /mypages/basic-laws/
+      - page: Drag Polar
+        url: /mypages/drag-polar/
 
   - title: Aircraft Performance
     url: /mypages/performance/
