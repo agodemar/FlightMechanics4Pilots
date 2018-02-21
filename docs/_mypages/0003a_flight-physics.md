@@ -212,3 +212,30 @@ exceeded for safety reasons.
 ## Motion of a Solid Body
 
 TBD.
+
+### Rotations
+TBD.
+
+### Rapid roll
+TBD.
+
+### Pull-up
+TBD.
+
+### Turn
+TBD.
+
+{% include image.html
+  url="/assets/img/ac_turn_inertial_couple.svg"
+  width="90%"
+  description="Corrected turn. Instantaneous angular velocity and inertial effects."
+  %}
+
+### Spin
+TBD.
+
+{% include image.html
+  url="/assets/img/ac_spin_inertial_couple.svg"
+  width="90%"
+  description="Aircraft in spinning flight. Instantaneous angular velocity and inertial effects."
+  %}

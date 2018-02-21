@@ -145,11 +145,20 @@ allows the calculation of flow velocity from a measurement of $p_0 - p$, obtaine
 The constant density $\rho$ value can be obtained by measuring $p$ and $T$ and applying the
 equation of state to calculate $\rho = p/(R\,T)$.
 
+The implications of equation (\ref{eq:Airpeeds:Bernoulli}) for uncompressible flows are often visualized
+by the Venturi-tube experiment shown below. Being the sum of static and dynamic pressure a constant, this
+the instruments show a pressure decrease where the local airstream accelerates, and a pressure rise where
+the airspeeds decreases.
+
 {% include image.html
   url="/assets/img/bernoulli_tube.png"
   width="60%"
   description="Air flow and pressure in a venturi tube."
   %}
+
+In those points in the flow where the local velocity becomes zero (not occurring in the above experiment),
+the local static pressure reaches the value of the airflow total pressure $p_0$.
+The condition $V = 0$ defines a *stagnation point* in the flow.
 
 The values of $p_0$ obtained from the Pitot probe and $p$ obtained from the static pressure
 orifice enable calculation of the airplane's speed through the air using equation
@@ -162,7 +171,7 @@ the cockpit, with units of velocity, say miles per hour, on the dial.
 
 {% include image.html
   url="/assets/img/True_airspeed_indicator-FAA.png"
-  width="50%"
+  width="40%"
   description="A mechanical true airspeed indicator for a low-speed airplane. The pilot sets the pressure altitude and air temperature in the top window using the knob; the needle indicates true airspeed in the lower left window."
   %}
 
@@ -411,7 +420,14 @@ $$
 
 Flight manuals (or flight management computers) report the tabulated values of the correction $\Delta V_\mathrm{IAS}$
 to be applied to the $V_\mathrm{IAS}$ as a function of $V_\mathrm{IAS}$ itself and of the aircraft configuration status
-(e.g. in cruise, at take-off, with speedbreakers deployed).
+(e.g. in cruise, at take-off, with speedbreakers deployed). Next figure shows this correction function for
+the military jet trainer Aermacchi MB-336.
+
+{% include image.html
+  url="/assets/img/MB336_Delta_IAS.svg"
+  width="70%"
+  description="IAS correction $\Delta V_\mathrm{IAS}$ due to the position of static ports for the military jet trainer Aermacchi MB-336."
+  %}
 
 ### Equivalent Airspeed (EAS)
 
@@ -529,9 +545,21 @@ conditions exist.
 
 ### Ice formation
 
-Most Pitot tubes have one or more drain holes connected to the pressure chamber, and are essentially "self-draining".
-They are used to drain away atmospheric water and other contaminants preserving the proper functioning of cockpit
-indicators connected to the Pitot-static system.
+The thermography of a Boeing 737-800 Pitot probe with heating activated is shown below.
+This example, provided in 2012 by the Irish Air Accident Investigation Unit (AAIU), shows that in a poorly
+designed system heat (red) might not reach the tip of the tube, where ice can form and corrupt airspeed
+measurements.
+
+{% include image.html
+  url="/assets/img/B737_Pitot_Heat_Map.jpg"
+  width="30%"
+  description="Thermal imaging of a Boeing 737-800 Pitot probe with heating activated.
+  Test used by Boeing to address several Pitot tube anomalies occurred before 2012."
+  %}
+
+Most Pitot tubes have one or more drain holes connected to the pressure chamber. The tube are made
+essentially "self-draining" by the presence of the holes. They are used to drain away atmospheric water
+and other contaminants preserving the proper functioning of cockpit indicators connected to the Pitot-static system.
 
 {% include image.html
   url="/assets/img/Pitot_Drain_Holes.jpg"
@@ -546,6 +574,14 @@ higher airspeeds with an increase in altitude. This situation can be dangerous i
 
 If the static ports become blocked and the Pitot tube remains operable, the airspeed indicator will barely work
 and indications will be inaccurate.
+
+Pitot heat is turned on by the pilot anytime ice is suspected in order to melt any amount of ice which might grow in size
+over the tube and create an erroneous reading or no reading at all on the airspeed indicator.
+
+On the several airplanes the Pitot heat is automatically turned on once aircraft power is established (low heat) and
+then switches mode in the air (high heat). The heating system can be made fully automatic and the crew only learns
+about failures through EICAS (Engine Indicating and Crew Alerting System) o ECAM (Electronic Centralised Aircraft Monitor)
+and a dedicated light.
 
 ### Digital display
 
