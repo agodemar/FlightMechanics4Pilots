@@ -161,7 +161,7 @@ The next scheme of forces is the result of the common two assumptions in the stu
   $\boldsymbol{V}$.
 
 {% include image.html
-  url="/assets/img/ac_sideview_horizontal_simplified.png"
+  url="/assets/img/ac_sideview_climb_simplified.png"
   width="90%"
   description="Aircraft in wings level, climbing flight. Assuming small angles and a baricentric thrust line."
   %}

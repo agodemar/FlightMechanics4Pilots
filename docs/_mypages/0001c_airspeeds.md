@@ -507,3 +507,79 @@ $$
 V_\mathrm{TAS} = V_\mathrm{EAS} \, \color{red}{ \frac{1}{\sqrt{\mathstrut \sigma}} }
 \label{eq:Airpeeds:TAS:EAS}
 $$
+
+## Common Problems
+
+The most common problem with the pitot-static system is a blockage of the pitot tube or the static ports, or both.
+Pitot tubes have an electronic heating element inside of the tube that prevents ice from blocking the air inlet
+or drain hole. The pilot can send electric current to the element with a switch in the cockpit when ice-forming
+conditions exist.
+
+{% include image.html
+  url="/assets/img/Pitot-Static_System_Heaters.png"
+  width="100%"
+  description="Pitot-static system. Heaters are used to prevent Pitot tube or static port blockage."
+  %}
+
+### Ice formation
+
+Most Pitot tubes have one or more drain holes connected to the pressure chamber, and are essentially "self-draining".
+They are used to drain away atmospheric water and other contaminants preserving the proper functioning of cockpit
+indicators connected to the Pitot-static system.
+
+{% include image.html
+  url="/assets/img/Pitot_Drain_Holes.jpg"
+  width="80%"
+  description="Drain holes of a Pitot tube."
+  %}
+
+If the pitot tube becomes blocked, and its drain hole remains clear, the airspeed will read zero.
+
+If the Pitot tube and its drain hole are blocked, the airspeed indicator will act like an altimeter, reading
+higher airspeeds with an increase in altitude. This situation can be dangerous if not recognized immediately.
+
+If the static ports become blocked and the Pitot tube remains operable, the airspeed indicator will barely work
+and indications will be inaccurate.
+
+### Digital display
+
+High performance and jet transport category aircraft Pitot-static systems may be more complicated.
+They utilize digital air data computers (DADC). Essentially, all pressures and temperatures captured by sensors
+are fed into the ADC. Analog units utilize transducers to convert these to electrical values and manipulate them
+in various modules containing circuits designed to make the proper compensations for use by different instruments
+and systems.
+
+A DADC usually receives its data in digital format. Systems that do not have digital sensor outputs will convert
+inputs into digital signals via an analog-to-digital converter.
+
+{% include image.html
+  url="/assets/img/Display_DADC.png"
+  width="80%"
+  description="Display of air data in aircraft equipped with Digital Air Data Computer (DADC)."
+  %}
+
+Aircraft with three redundant systems and flight computer have the computer compare the readings and display
+appropriate message (airspeed disagree, altitude disagree, vertical speed disagree) and sound master warning
+if it detects mismatch larger than normal measurement error.
+
+### Managing inconsistent sensor readings
+
+Even if the DADC does detect a fault by comparing the values from the separate systems, it does not know
+which of the systems is wrong. The pilots must decide themselves by combining other information they have and
+their understanding of physics of flight.
+
+In smaller aircraft that do not have redundant Pitot-static systems and in older aircraft without flight computer
+it is up to the pilot(s) to spot the problem.
+
+With one or more unreliable airspeed indications -- which is one of the most critical situations -- the initial action
+is *not* to start troubleshooting/figuring out which indicator is 'the correct one', but to ensure safe speed/flight path
+by other means.
+
+For instance, the initial actions on Boeing aircraft is to disconnect automatics (autothrottle, autopilot,
+flight director) and control the aircraft given *memorized combinations* of pitch and thrust
+(or read from pitch-thrust tables). With the aircraft under control, and when directed by the checklist, pilots
+start analyzing the situation, to see if they can rectify/isolate the faulty source.
+If a reliable source can not be determined, the aircraft continues to be flown by pitch/thrust settings given
+in the manual (based on altitude, if known, weight, flaps/gear, desired vertical profile).
+
+Erroneous airspeed/altitude indications often imply each other, as an unreliable static pressure source will affect both.
