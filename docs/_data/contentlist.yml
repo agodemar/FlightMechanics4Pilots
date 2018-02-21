@@ -34,17 +34,13 @@ toc:
       - page: Airspeeds
         url: /mypages/airspeeds/
 
-  - title: Flight Physics
-    url: /mypages/flight-physics/
-    subfolderitems:
-      - page: Basic Newton Laws
-        url: /mypages/basic-laws/
-      - page: Drag Polar
-        url: /mypages/drag-polar/
-
   - title: Aircraft Performance
     url: /mypages/performance/
     subfolderitems:
+      - page: Flight Physics
+        url: /mypages/flight-physics/
+      - page: Drag Polar
+        url: /mypages/drag-polar/
       - page: Cruising Flight
         url: /mypages/cruise/
       - page: Climbing Flight

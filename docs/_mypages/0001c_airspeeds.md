@@ -145,6 +145,12 @@ allows the calculation of flow velocity from a measurement of $p_0 - p$, obtaine
 The constant density $\rho$ value can be obtained by measuring $p$ and $T$ and applying the
 equation of state to calculate $\rho = p/(R\,T)$.
 
+{% include image.html
+  url="/assets/img/bernoulli_tube.png"
+  width="60%"
+  description="Air flow and pressure in a venturi tube."
+  %}
+
 The values of $p_0$ obtained from the Pitot probe and $p$ obtained from the static pressure
 orifice enable calculation of the airplane's speed through the air using equation
 (\ref{eq:Airpeeds:V:Incompressible}), as long as the airplane's velocity
@@ -253,7 +259,7 @@ Because the gas is isentropically compressed at the nose of the Pitot probe the
 following equation
 
 $$
- \frac{p_0}{p} = \left( \frac{T}{T_0} \right)^{\gamma/(\gamma - 1)}
+ \frac{p_0}{p} = \left( \frac{T_0}{T} \right)^{\gamma/(\gamma - 1)}
 \label{eq:Airpeeds:Isentropic:Flow:p}
 $$
 
