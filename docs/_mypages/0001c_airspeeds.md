@@ -325,21 +325,22 @@ $$
 However, the fundamental formula (\ref{eq:Airpeeds:TAS:Subsonic:Compressible}) requires a knowledge
 of the sound speed $a(h)$ at the flight altitude and hence the local ambient temperature $T(h)$.
 *The static temperature in the air surrounding the airplane is difficult to measure*.
-Therefore, all high-speed *subsonic* airspeed indicators are calibrated from
-equation (\ref{eq:Airpeeds:TAS:Subsonic:Compressible}), assuming that $a(h)$ is
+Therefore, all high-speed *subsonic* airspeed indicators are calibrated from a reformulation
+of equation (\ref{eq:Airpeeds:TAS:Subsonic:Compressible}), assuming that $a(h)$ is
 equal to the standard sea-level value $a_\mathrm{SL} = 340.3\,\mathrm{m/s} = 1116\,\mathrm{m/s}$.
 Moreover, the airspeed indicator is designed to sense the actual pressure difference
 $p_0 - p$ in formula (\ref{eq:Airpeeds:TAS:Subsonic:Compressible}), not the pressure ratio
 $p_0/p$, as appears in equation (\ref{eq:Airpeeds:Isentropic:Flow:Energy:V:A}). Hence, the
-form of the above equation used to define a *calibrated airspeed* (CAS) is as follows:
+form of the above equation becomes the following *calibration formula*:
 
 $$
-V_\mathrm{CAS} = \left\{ \frac{2\, \color{blue}{a_\mathrm{SL}^2}}{\gamma - 1} \left[ \left( 1 + \frac{\color{red}{p_0 - p}}{\color{blue}{p_\mathrm{SL}}}\right)^{(\gamma - 1)/\gamma} - 1 \right]\right\}^\frac{1}{2}
-\label{eq:Airpeeds:CAS}
+V_\mathrm{Calibration-Formula} = \left\{ \frac{2\, \color{blue}{a_\mathrm{SL}^2}}{\gamma - 1} \left[ \left( 1 + \frac{\color{red}{p_0 - p}}{\color{blue}{p_\mathrm{SL}}}\right)^{(\gamma - 1)/\gamma} - 1 \right]\right\}^\frac{1}{2}
+\label{eq:Airpeeds:Calibration:Formula}
 $$
 
 where $a_\mathrm{SL}$, and $p_\mathrm{SL}$, are the standard sea-level values of the speed of sound and static
-pressure, respectively.
+pressure, respectively. As explained below, this expression coincides with the 'indicated airspeed', because
+this is the formula used to calibrate (on ground) the airspeed indicator instrument.
 
 ## Supersonic Formulation
 
@@ -398,7 +399,8 @@ Indicated airspeed (IAS) is the airspeed $V_\mathrm{IAS}$ read directly from the
 Ideally, if the ambient static pressure $p=p_\infty$ was measured with no errors, it would be:
 
 $$
-V_\mathrm{CAS} = V_\mathrm{IAS} = \left\{ \frac{2\, \color{blue}{a_\mathrm{SL}^2}}{\gamma - 1} \left[ \left( 1 + \frac{\color{red}{p_0 - p}}{\color{blue}{p_\mathrm{SL}}}\right)^{(\gamma - 1)/\gamma} - 1 \right]\right\}^\frac{1}{2}
+V_\mathrm{IAS} = \left\{ \frac{2\, \color{blue}{a_\mathrm{SL}^2}}{\gamma - 1} \left[ \left( 1 + \frac{\color{red}{p_0 - p}}{\color{blue}{p_\mathrm{SL}}}\right)^{(\gamma - 1)/\gamma} - 1 \right]\right\}^\frac{1}{2}
+  \quad (\, = V_\mathrm{CAS} \;\mathrm{neglecting\; position\; errors}\,)
 \label{eq:Airpeeds:CAS:IAS:No:Errors}
 $$
 
@@ -410,11 +412,11 @@ Therefore, the calibrated airspeed (CAS) defined above is the IAS corrected for 
 which are characterized experimentally by flight test engineers before the manufacturer obtains the final certification
 to fly the aircraft.
 
-For instance, the expression (\ref{eq:Airpeeds:CAS}) given above for subsonic flight in compressible regime,
-assuming that $V_\mathrm{CAS}=V_\mathrm{CAS}$, can be reformulated as follows:
+For instance, the expression (\ref{eq:Airpeeds:CAS:IAS:No:Errors}) given above for subsonic flight in compressible regime,
+assuming that $V_\mathrm{CAS}=V_\mathrm{IAS}$, can be reformulated as follows:
 
 $$
-V_\mathrm{CAS} = V_\mathrm{IAS} + \Delta V_{\mathrm{IAS}} = \left\{ \frac{2\, \color{blue}{a_\mathrm{SL}^2}}{\gamma - 1} \left[ \left( 1 + \frac{\color{red}{p_0 - p}}{\color{blue}{p_\mathrm{SL}}}\right)^{(\gamma - 1)/\gamma} - 1 \right]\right\}^\frac{1}{2} + \color{green}{\Delta V_\mathrm{IAS}}
+V_\mathrm{CAS} = V_\mathrm{IAS} + {\color{green}{ \Delta V_{\mathrm{IAS}} }} = \left\{ \frac{2\, \color{blue}{a_\mathrm{SL}^2}}{\gamma - 1} \left[ \left( 1 + \frac{\color{red}{p_0 - p}}{\color{blue}{p_\mathrm{SL}}}\right)^{(\gamma - 1)/\gamma} - 1 \right]\right\}^\frac{1}{2} + \color{green}{\Delta V_\mathrm{IAS}}
 \label{eq:Airpeeds:CAS:IAS}
 $$
 

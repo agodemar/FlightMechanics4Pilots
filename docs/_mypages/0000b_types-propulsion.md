@@ -6,3 +6,5 @@ permalink: /mypages/types-propulsion/
 ---
 
 # Types of Propulsion
+
+<p><a href="{{ site.url }}/assets/Motori.pdf">Slides in Italian here.</a></p>
