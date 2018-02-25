@@ -7,6 +7,8 @@ permalink: /mypages/cruise/
 
 # Level Unaccelerated Flight -- Cruising Flight
 
+<p><a href="{{ site.url }}/assets/Volo_Livellato.pdf">Slides in Italian here.</a></p>
+
 {% include image.html
   url="/assets/img/ac_sideview_horizontal_simplified.png"
   width="90%"
