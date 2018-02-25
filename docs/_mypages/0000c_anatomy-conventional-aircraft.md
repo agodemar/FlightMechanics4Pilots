@@ -21,6 +21,12 @@ The figure below represents an airplane with a conventional three-axis architect
 
 This cartesian reference is called *aircraft body-frame*. The origin $G$ coincides with the aircraft center of gravity (CoG) and the three axes are oriented as shown. For this reason the *body-axes* are also named $x_\mathrm{B}$, $y_\mathrm{B}$, and $z_\mathrm{B}$. The first axis $x_\mathrm{B}$ is directed along the fuselage longitudinal dimension and points forwards. The second body axis $y_\mathrm{B}$ is normal to the fuselage symmetry plane and is positively oriented towards the right wing tip. The third axis $z_\mathrm{B}$ completes the cartesian frame and points towards the fuselage belly.
 
+{% include image.html
+  url="/assets/img/ac_center_of_gravity.svg"
+  width="100%"
+  description="Aircraft center of gravity (CoG) as the the center of the applied weight vectors representing several subsystems. According to payload and fuel variability, designers establish a safe CoG range for all flight conditions."
+  %}
+
 ## Planform definitions
 
 The figure below shows a top view af an aircraft.

@@ -532,6 +532,20 @@ V_\mathrm{TAS} = V_\mathrm{EAS} \, \color{red}{ \frac{1}{\sqrt{\mathstrut \sigma
 \label{eq:Airpeeds:TAS:EAS}
 $$
 
+The figure below represents visually this concept.
+
+{% include image.html
+  url="/assets/img/ac_airspeeds_recap.svg"
+  width="90%"
+  description="Straight flight at two different altitudes but at the same dynamic pressure $\bar{q}=\frac{1}{2}\rho V^2 = \frac{1}{2}\rho_\mathrm{SL} V_\mathrm{EAS}^2$. If the aircraft keeps the same angle of attack (i.e. the same pitch angle) in the two flight conditions, also the aerodynamic forces and moments are the same."
+  %}
+
+In wings level, constant altitude flight, an aircraft flying at seal level with a speed $V_\mathrm{EAS}$ given by
+(\ref{eq:Airpeeds:TAS:EAS}) experiences the same dynamic pressure that occurs when flying at altitude $h$ with
+airspeed $V_\mathrm{TAS}$. If the angle of attack in the two flight conditions is kept the same, i.e. maintaining
+the same pitch angle, also the aerodynamic forces and moments are the same. If performance is concerned, this means
+that in the two conditions the thrust and lift required for level flight are the same.
+
 ## Common Problems
 
 The most common problem with the pitot-static system is a blockage of the pitot tube or the static ports, or both.
