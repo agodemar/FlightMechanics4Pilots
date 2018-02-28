@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Climbing Flight
+title: Climbing Flight Performance
 categories: [menu, content, performance, climb]
 permalink: /mypages/climb/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cruising Flight
+title: Level Flight Performance
 categories: [menu, content, performance, level-flight]
 permalink: /mypages/level-flight/
 ---
