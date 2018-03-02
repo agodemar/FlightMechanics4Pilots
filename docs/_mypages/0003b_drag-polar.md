@@ -9,7 +9,7 @@ permalink: /mypages/drag-polar/
 
 <p><a href="{{ site.url }}/assets/Polare_di_resistenza.pdf">Slides in Italian here.</a></p>
 
-Aircraft parabolic drag polar:
+## Aircraft parabolic drag polar
 
 $$
 C_D = C_{D0} + K\,C_L^2
@@ -43,7 +43,7 @@ Actual polar:
   description="Aircraft parabolic and actual drag polar."
   %}
 
-Generalized parabolic polar:
+## Generalized parabolic polar
 
 $$
 C_D = C_{D\mspace{2mu}\mathrm{min}} + K\,\left( C_L - C_{L\mspace{2mu}\mathrm{ideal}} \right)^2
@@ -56,7 +56,13 @@ $$
 Equation (\ref{eq:Drag:Polar:Parabolic:B}) is unnecessarily too complicated. An acceptable approximation is given by
 the simple parabolic drag polar (\ref{eq:Drag:Polar:Parabolic:A}).
 
-Equivalent parassite area:
+{% include image.html
+  url="/assets/img/Drag_Polar_CL_ranges.svg"
+  width="70%"
+  description="Validity of aircraf parabolic drag polar for normal operative conditions."
+  %}
+
+## Equivalent parassite area
 
 $$
 f = C_{D0} \, S
@@ -83,7 +89,7 @@ $$
 - $C_{f\mspace{2mu}\mathrm{turb}}$, friction coefficient of a flat plate aligned with the flow,
   calculated in turbulent regime at the aircraft flight Reynolds number $\mathrm{Re} = \rho V \bar{c}/\mu$.
 
-Oswald efficiency factor:
+## Oswald efficiency factor
 
 $$
 e = f \left( M, \mathrm{A\!R}, \Lambda_\mathrm{le} \right)
@@ -91,11 +97,3 @@ e = f \left( M, \mathrm{A\!R}, \Lambda_\mathrm{le} \right)
 $$
 
 (various calculation methods in literature)
-
-# Aircraft Technical Polar
-
-{% include image.html
-  url="/assets/img/Drag_Polar_CL_ranges.svg"
-  width="70%"
-  description="Validity of aircraf parabolic drag polar for normal operative conditions."
-  %}
