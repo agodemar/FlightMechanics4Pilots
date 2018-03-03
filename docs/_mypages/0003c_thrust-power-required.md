@@ -5,9 +5,17 @@ categories: [menu, content, performance, thrust-power-required]
 permalink: /mypages/thrust-power-required/
 ---
 
-# Thrust and Power Required
+# Thrust and Power Required in Level Flight
 
 <p><a href="{{ site.url }}/assets/Polari_Tecniche.pdf">Slides in Italian here.</a></p>
+
+## Drag Polar Characteristic Points
+
+{% include image.html
+  url="/assets/img/Drag_Polar_Points_EPA.svg"
+  width="80%"
+  description="Characteristic points 'E', 'P', and 'A' on the parabolic drag polar. The point 'S' is taken on the actual drag polar."
+  %}
 
 ## Thrust Technical Polar
 
