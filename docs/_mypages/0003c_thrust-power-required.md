@@ -56,8 +56,8 @@ $$
 - $T_\mathrm{R}$ for airplane at given altitude varies with velocity.
 
 {% include image.html
-  url="/assets/img/Thrust_Required.png"
-  width="90%"
+  url="/assets/img/Thrust_Required_Stall_Speed.svg"
+  width="50%"
   description="Thrust technical polar. Example of thrust required for horizontal unaccelerated flight at a given altitude."
   %}
 
@@ -86,6 +86,12 @@ $$
 V \propto \frac{1}{\sqrt{C_L}} \quad \Leftrightarrow \quad C_L \propto \frac{1}{V^2}
 \label{eq:Level:Flight:Speed:CL:Proportional}
 $$
+
+{% include image.html
+  url="/assets/img/Level_Flight_V_CL.svg"
+  width="60%"
+  description="Airspeed in level flight and dependency on $C_L$ as well as angle of attack $\alpha$."
+  %}
 
 ## Stall Speed
 
