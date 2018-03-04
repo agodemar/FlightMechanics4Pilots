@@ -89,8 +89,14 @@ $$
 
 {% include image.html
   url="/assets/img/Level_Flight_V_CL.svg"
-  width="60%"
+  width="70%"
   description="Airspeed in level flight and dependency on $C_L$ as well as angle of attack $\alpha$."
+  %}
+
+{% include image.html
+  url="/assets/img/Level_Flight_V_D.svg"
+  width="70%"
+  description="Drag in level flight as a function of true airspeed $V$. Angle of attack $\alpha$ necessary for vertical equilibrium."
   %}
 
 ## Stall Speed
@@ -110,3 +116,11 @@ V_\mathrm{s} =
   \frac{1}{\sqrt{\sigma}} \, V_{\mathrm{s,}\mspace{2mu}\mathrm{SL}}
 \label{eq:Stall:Speed:Altitude}
 $$
+
+## Drag
+
+{% include image.html
+  url="/assets/img/Level_Flight_V_D_Induced_Parassite.svg"
+  width="70%"
+  description="Drag in level flight as a sum of zero-lift drag and of lift dependent drag."
+  %}
