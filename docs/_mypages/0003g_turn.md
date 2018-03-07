@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Turning Flight
+title: Turning Flight Performance
 categories: [menu, content, performance, turn]
 permalink: /mypages/turn/
 ---
 
-# Descending Flight
+# Turning Flight Performance
 
 {% include image.html
   url="/assets/img/coordinated_turn.png"

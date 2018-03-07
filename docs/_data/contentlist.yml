@@ -45,10 +45,10 @@ toc:
         url: /mypages/thrust-power-required/
       - page: Level Flight
         url: /mypages/level-flight/
-      - page: Climbing Flight
-        url: /mypages/climb/
-      - page: Descending Flight
-        url: /mypages/descend/
+      - page: Climbing and Descending Flight
+        url: /mypages/climb-descend/
+      - page: Range and Endurance
+        url: /mypages/range-endurance/
       - page: Turning Flight
         url: /mypages/turn/
       - page: Pull-Up Flight
