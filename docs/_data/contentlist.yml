@@ -57,6 +57,8 @@ toc:
         url: /mypages/take-off/
       - page: Landing
         url: /mypages/landing/
+      - page: Slides
+        url: /mypages/performance-slides/
 
   - title: Aircraft Stability and Control
     url: /mypages/stability-control/
