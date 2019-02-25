@@ -433,8 +433,7 @@ the military jet trainer Aermacchi MB-336.
 
 ### Equivalent Airspeed (EAS)
 
-Equivalent airspeed (EAS) is the speed obtained by the CAS formula (\ref{eq:Airpeeds:CAS}) or
-(\ref{eq:Airpeeds:CAS:IAS}) by replacing the value of $p_\mathrm{SL}$ with the effective value of
+Equivalent airspeed (EAS) is the speed obtained by the CAS formula (\ref{eq:Airpeeds:CAS:IAS}) by replacing the value of $p_\mathrm{SL}$ with the effective value of
 the static pressure at the flight altitude.
 
 $$
@@ -473,7 +472,7 @@ determine its readout, as first explained above.
 
 It is important to reinforce that dynamic pressure is a *definition*, defined by the quantity
 $\bar{q} = \frac{1}{2}\rho V^2$.
-Now imagine the aircraf is flying at standard sea level, where the free-stream density
+Now imagine the aircraft is flying at standard sea level, where the free-stream density
 is $\rho_\mathrm{SL} = 1.225\,\mathrm{kg/m}^3$.
 
 *Question*: What velocity $V_\mathrm{SL}$ would it have to have at standard sea level to

@@ -59,7 +59,7 @@ the simple parabolic drag polar (\ref{eq:Drag:Polar:Parabolic:A}).
 {% include image.html
   url="/assets/img/Drag_Polar_CL_ranges.svg"
   width="70%"
-  description="Validity of aircraf parabolic drag polar for normal operative conditions."
+  description="Validity of aircraft parabolic drag polar for normal operative conditions."
   %}
 
 ## Equivalent parassite area
