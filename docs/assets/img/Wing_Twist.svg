@@ -14,7 +14,7 @@
    height="660.58716"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.1 r15371"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="Wing_Twist.svg"
    inkscape:export-filename="Wing_Twist.png"
    inkscape:export-xdpi="150"
@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.39843363"
-     inkscape:cx="1390.0184"
-     inkscape:cy="87.404384"
+     inkscape:zoom="0.79686726"
+     inkscape:cx="1009.1408"
+     inkscape:cy="498.0808"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -36,10 +36,10 @@
      fit-margin-left="20"
      fit-margin-right="20"
      fit-margin-bottom="20"
-     inkscape:window-width="1280"
-     inkscape:window-height="657"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="3440"
+     inkscape:window-height="1346"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1" />
   <defs
      id="defs4">
@@ -94,7 +94,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
